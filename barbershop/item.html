@@ -3,115 +3,149 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<title>Переносной набор для бритья - Baxter of California</title>
 </head>
-
 <body>
-	<div class="wrapper">
-		<header>
-			<img class="logo_head" src="#" alt="">
-			<nav>
-				<ul>
-					<li>ИНФОРМАЦИЯ</li>
-					<li>НОВОСТИ</li>
-					<li>ПРАЙС-ЛИСТ</li>
-					<li>МАГАЗИН</li>
-					<li>КОНТАКТЫ</li>
+	<header>
+		<div class="head_container">
+			<div class="logo_head">
+				<a href="index.html">
+					<img src="img/logo.png" width="111" height="24" alt="Barbershop">
+				</a>
+			</div>
+			<nav class="main_navigation">
+				<ul class="menu">
+					<li>
+						<a href="#">Информация</a>
+					</li>
+					<li>
+						<a href="#">Новости</a>
+					</li>
+					<li>
+						<a href="price.html">Прайс-лист</a>
+					</li>
+					<li>
+						<a class="active" href="shop.html">Магазин</a>
+					</li>
+					<li>
+						<a href="#">Контакты</a>
+					</li>
 				</ul>
 			</nav>
-			<div class="login">
-				<button class="log_btn"></button>
-			</div>
 			<div class="login_block">
-				<a href="#">ВХОД</a>
+				<a class="log_block" href="#">Вход</a>
+				<div class="login_form">
+					<form>
+						<div class="login_caption">
+							<span>Личный кабинет</span>
+							<span>Введите пожалуйста свой логин и пароль</span>
+						</div>
+						<label for="login_input">Логин</label>
+						<input type="text" id="login_input" placeholder="Логин" name="login">
+						<label for="pass_input">Пароль</label>
+						<input type="text" id="pass_input" placeholder="Пароль" name="pass_input">
+						<div class="login_link">
+							<input type="checkbox" name="remember" id="remember" checked="checked">
+							<label for="remember">запомнить</label>
+							<a href="#">я забыл пароль!</a>
+						</div>
+						<button type="submit" class="btn btn-submit">войти</button>
+					</form>
+				</div>
 			</div>
-		</header>
-		<main class="mnoduct_content">
-			<h2>НАБОР ДЛЯ ПУТЕШЕСТВИЙ &laquo;BAXTER OF CALIFORNIA&raquo;</h2>
-
-			<!-- Хлбеные крошки -->
-
-			<div>
-				<ul class="breadcrumb">
+		</div>
+	</header>
+	<main>
+		<div class="container">
+			<h1>НАБОР ДЛЯ ПУТЕШЕСТВИЙ &laquo;BAXTER OF CALIFORNIA&raquo;</h1>
+			<nav class="breadcrums">
+				<ul class="breadcrumbs_list">
 					<li>
-						<a href="#">главная</a>
+						<a href="index.html">главная</a>
 					</li>
 					<li>
 						<a href="#">магазин</a>
 					</li>
 					<li>
-						<a href="#">средства для ухода</a>
+						<a href="shop.html">средства для ухода</a>
 					</li>
-					<li class="crumb_active">набор для путешествий &laquo;BAXTER OF CALIFORNIA&raquo;</li>
+					<li class="active">набор для путешествий &laquo;BAXTER OF CALIFORNIA&raquo;</li>
+				</ul>
+			</nav>
+			<div class="content">
+				<div class="content_image">
+					<img class="image_item" src="img/item_4.jpg" width="460" height="498" alt="Переносной набор для бритья ">
+					<ul>
+						<li>
+							<img src="img/item_2.jpg" width="140" height="149" alt="переносной набор для бритья">
+						</li>
+						<li>
+							<img src="img/item_3.jpg" width="140" height="149" alt="переносной набор для бритья">
+						</li>
+						<li>
+							<img src="img/item_5.jpg" width="140" height="149" alt="переносной набор для бритья">
+						</li>
+					</ul>
+				</div>
+				<div class="content_list">
+					<div class="top_content">
+						<div>
+							<div class="in_stock">есть в наличии</div>
+							<div class="item_code">артикул:dexter-ae</div>
+						</div>
+						<div class="product_description">
+							<p>
+								Travel Kit - необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится все, что нужно для бритья
+								и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, шампунь.
+								Набор так же может стать отличным подарком.
+							</p>
+						</div>
+						<span class="item_price">2 900 &#8381;</span>
+						<button>купить</button>
+					</div>
+					<div class="item_block">
+						<span>в набор входят:</span>
+						<ul class="item_list">
+							<li>Средство для умывания (50 мл)</li>
+							<li>Увлажняющий крем (50 мл)</li>
+							<li>Крем для бритья (50 мл)</li>
+							<li>Крем после бритья, шампунь (50 мл)</li>
+							<li>Удобная кожаная косметичка</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<div class="container">
+			<div class="footer_address">
+				<span>Барбершоп &laquo;Бородинский&raquo;</span>
+				<address>Адрес: Г. Сантк-Петербург, б. Конюшенная, 19/8</address>
+				<a href="#">Как нас найти?</a>
+				<span>Телефон: +7 (495) 666-02-66</span>
+			</div>
+			<div class="social_block">
+				<span>Давайте дружить!</span>
+				<ul class="social_list">
+					<li>
+						<a class="btn btn_vk btn_social" href="#">vk</a>
+					</li>
+					<li>
+						<a class="btn btn_fb btn_social" href="#">facebook</a>
+					</li>
+					<li>
+						<a class="btn btn_inst btn_social" href="#">instagram</a>
+					</li>
 				</ul>
 			</div>
-
-			<!-- Фотографии товара -->
-			<div>
-				<img src="#" alt="">
-				<img src="#" alt="">
-				<img src="#" alt="">
-				<img src="#" alt="">
+			<div class="copyright">
+				<span>Разработано:</span>
+				<a class="btn " href="#">htmlacademy.ru</a>
 			</div>
-
-			<!-- Блок информации о товаре -->
-			<div>
-				<div>
-					<ul>
-						<li>есть в наличии</li>
-						<li>артикул:dexter-ae</li>
-					</ul>
-					<p>
-						Travel Kit - необходимый аксессуар во время любого
-						<br> путешествия. В аккуратной кожаной сумке находится все, что
-						<br> нужно для бритья и ухода за кожей во время рабочей поездки
-						<br> или отдыха: средство для умывания, увлажнящий крем, крем
-						<br> для бритья, шампунь. Набор так же может
-						<br> стать отличным подарком.
-					</p>
-					<span>2 900 &#8381;</span>
-					<button>купить</button>
-				</div>
-				<div>
-					<span>в набор входят:</span>
-					<ul>
-						<li>Средство для умывания (50 мл)</li>
-						<li>Увлажняющий крем (50 мл)</li>
-						<li>Крем для бритья (50 мл)</li>
-						<li>Крем после бритья, шампунь (50 мл)</li>
-						<li>Удобная кожаная косметичка</li>
-					</ul>
-				</div>
-			</div>
-		</main>
-
-		<footer>
-			<div>
-				<section>
-					<h2>Контактная информация</h2>
-					<span>БАРБЕРШОП &laquo;БОРОДИНСКИЙ&raquo;</span>
-					<br>
-					<address>Адрес: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, 19/8</address>
-					<br>
-					<span>
-						<a href="#">Как нас найти?</a>
-					</span>
-					<br>
-					<span>ТЕЛЕФОН: +7 (495) 666-02-66</span>
-				</section>
-				<section>
-					<h3>Давайте дружить!</h3>
-					<a href="#">vk</a>
-					<a href="#">facebook</a>
-					<a href="#">instagram</a>
-				</section>
-				<section>
-					<h3>Разработано:</h3>
-					<a href="#">htmlacademy.ru</a>
-				</section>
-			</div>
-		</footer>
-	</div>
+		</div>
+	</footer>
 </body>
 
 </html>
