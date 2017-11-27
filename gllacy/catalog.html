@@ -9,8 +9,8 @@
 
 <body>
 	<header>
-		<div class="container">
-			<div class="top_header">
+		<div class="container clearfix">
+			<div class="top_header clearfix">
 				<div class="logo">
 					<a href="index.html">
 						<img src="img/Logo.png" width="154" height="64" alt="Gllacy Shop">
@@ -25,7 +25,7 @@
 									<span>Новинки</span>
 								</li>
 								<li>
-									<a href="catalog.html">Сливочное</a>
+									<a class="active" href="catalog.html">Сливочное</a>
 								</li>
 								<li>
 									<a href="#">Щербеты</a>
@@ -66,7 +66,7 @@
 						<input class="password_inpt" id="password" type="password" name="password" value="password">
 						<div class="form_nav">
 							<button class="btn" type="submit">Войти</button>
-							<ul>
+							<ul class="login_link">
 								<li>
 									<a href="#">Забыли пароль?</a>
 								</li>
@@ -85,7 +85,7 @@
 					<div class="basket_list">
 						<table>
 							<tr>
-								<td>Закрывающая иконка</td>
+								<td class="close_icon">Закрывающая иконка</td>
 								<td>
 									<img src="img/prod_1.png" width="33" height="33" alt="">
 								</td>
@@ -98,7 +98,7 @@
 								</td>
 							</tr>
 							<tr>
-								<td>Закрывающая иконка</td>
+								<td class="close_icon">Закрывающая иконка</td>
 								<td>
 									<img src="img/prod_3.png" width="33" height="33" alt="">
 								</td>
@@ -132,8 +132,8 @@
 	</header>
 
 	<main>
-		<div class="main_top">
-			<div class="container">
+		<div class="container clearfix">
+			<div class="main_top">
 				<nav class="breadcrumbs">
 					<ul>
 						<li>
@@ -143,22 +143,20 @@
 							<a href="catalog.html">Каталог</a>
 						</li>
 						<li>
-							<a class="bread_active">Сливочное</a>
+							<a class="active">Сливочное</a>
 						</li>
 					</ul>
 				</nav>
 				<h1>Сливочное мороженое</h1>
 			</div>
-		</div>
-		<div class="main_filter">
-			<div class="container">
+			<div class="main_filter">
 				<form class="filter_block" action="#" method="post">
 					<div class="filter_sorting">
 
 						<fieldset class="popularity_block">
 							<legend>Сортировка:</legend>
 							<select class="sorting" name="sorting">
-								<option>по популярности</option>
+								<option selected>по популярности</option>
 								<option>сначала недорогие</option>
 								<option>сначала дорогие</option>
 								<option>по жирности</option>
@@ -166,7 +164,9 @@
 						</fieldset>
 
 						<div class="filter_price">
-							<label for="amount">Цена: 100 руб. - 500 руб.</label>
+							<label for="amount">Цена:
+								<span class="minimum_price">100</span> руб. -
+								<span class="maximum_price">500</span> руб.</label>
 							<input type="text" id="amount" readonly>
 							<div id="slider_range"></div>
 						</div>
@@ -201,8 +201,8 @@
 				</form>
 			</div>
 		</div>
-		<div class="products">
-			<div class="container">
+		<div class="container clearfix">
+			<div class="products">
 				<div class="product_item">
 					<div class="products_img">
 						<img src="img/prod_1.png" width="267" height="267" alt="Мороженое с апельсиновым джемом">
@@ -255,7 +255,7 @@
 					</div>
 				</div>
 
-				<div class="products_item">
+				<div class="product_item">
 					<div class="products_img">
 						<img src="img/prod_5.png" width="267" height="267" alt="Мороженое с брусничным джемом">
 						<span class="price">325&#8381;/кг</span>
@@ -268,7 +268,7 @@
 					</div>
 				</div>
 
-				<div class="products_item">
+				<div class="product_item">
 					<div class="products_img">
 						<img src="img/prod_6.png" width="267" height="267" alt="Мороженое с ягодками черники">
 						<span class="price">410&#8381;/кг</span>
@@ -281,7 +281,7 @@
 					</div>
 				</div>
 
-				<div class="products_item">
+				<div class="product_item">
 					<div class="products_img">
 						<img src="img/prod_7.png" width="267" height="267" alt="Мороженое с карамельной присыпкой">
 						<span class="price">375&#8381;/кг</span>
@@ -294,7 +294,7 @@
 					</div>
 				</div>
 
-				<div class="products_item">
+				<div class="product_item">
 					<div class="products_img">
 						<img src="img/prod_8.png" width="267" height="267" alt="Мороженое с шоколадной стружкой">
 						<span class="price">415&#8381;/кг</span>
@@ -307,7 +307,7 @@
 					</div>
 				</div>
 
-				<div class="products_item">
+				<div class="product_item">
 					<div class="products_img">
 						<img src="img/prod_9.png" width="267" height="267" alt="Мороженое с кусочками шоколада">
 						<span class="price">440&#8381;/кг</span>
@@ -320,7 +320,7 @@
 					</div>
 				</div>
 
-				<div class="products_item">
+				<div class="product_item">
 					<div class="products_img">
 						<img src="img/prod_10.png" width="267" height="267" alt="Мороженое с ментоловым сиропом">
 						<span class="price">435&#8381;/кг</span>
@@ -333,7 +333,7 @@
 					</div>
 				</div>
 
-				<div class="products_item">
+				<div class="product_item">
 					<div class="products_img">
 						<img src="img/prod_11.png" width="267" height="267" alt="Мороженое с кусочками черного шоколада">
 						<span class="price">355&#8381;/кг</span>
@@ -346,7 +346,7 @@
 					</div>
 				</div>
 
-				<div class="products_item">
+				<div class="product_item">
 					<div class="products_img">
 						<img src="img/prod_12.png" width="267" height="267" alt="Мороженое с мятным сиропом">
 						<span class="price">420&#8381;/кг</span>
@@ -361,7 +361,7 @@
 			</div>
 		</div>
 		<div class="pagination_block">
-			<div class="container">
+			<div class="container clearfix">
 				<nav class="pagination">
 					<ul class="pagination_list">
 						<li>
@@ -392,7 +392,7 @@
 	</main>
 
 	<footer>
-		<div class="container">
+		<div class="container clearfix">
 			<div class="social_block">
 				<ul class="social_list">
 					<li>
@@ -426,11 +426,11 @@
 				</ul>
 			</div>
 			<div class="academy_block">
-				<a>
+				<a href="https://htmlacademy.ru/">
 					<img src="img/academy_logo.png" width="108" height="38" alt="html academy">
 				</a>
 				<span class="academy_link">Сделано в
-					<a href="#">HTML Academy</a> &copy; 2017</span>
+					<a href="https://htmlacademy.ru/">HTML Academy</a> &copy; 2017</span>
 			</div>
 		</div>
 	</footer>

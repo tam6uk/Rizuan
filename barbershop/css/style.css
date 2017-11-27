@@ -1,4 +1,247 @@
+html,
 body {
-    background-color: black;
-    color: white;
+    min-width: 1122px;
+    min-height: 1750px;
+    margin: 0;
+    padding: 0;
+  }
+  
+body {
+    background-color: white;
+    background-size: 1122px auto;
+}
+header {
+    border: 1px solid hotpink;
+}
+.container {
+    border: 1px solid salmon;
+    width: 940px;
+    margin: 0 auto;
+    padding: 0;
+}
+h1 {
+    border: 1px solid sandybrown;
+}
+.main_navigation {
+    float: left;
+    border: 2px solid darkgreen;
+    width: 780px;
+}
+.logo_head {
+    float: left;
+    border: 1px solid aqua;
+}
+.menu {
+    border: 1px solid lawngreen;
+    padding: 0px;
+    float: left;
+}
+.menu>li {
+    display: inline-block;
+}
+.login_block {
+    float: right;
+    border: 2px solid darkgreen;
+    width: 140px;
+}
+.login_form {
+    display: none;
+}
+.breadcrumbs {
+    border: 1px solid fuchsia;
+}
+.breadcrumbs_list {
+    padding: 0px;
+}
+.breadcrumbs_list>li {
+    display: inline-block;
+}
+.index_logo {
+    border: 1px solid rgb(59, 202, 71);
+    width: 368px;
+    height: 204px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 25px;
+}
+.advantages {
+    border: 1px solid rgb(59, 202, 71);
+    margin-bottom: 80px;
+}
+.advantages_caption {}
+
+.advantages_item {
+    border: 1px solid rgb(59, 202, 71);
+    float: left;
+    width: 297px;    
+    margin-right: 20px;
+}
+.advantages_item:last-child {
+    margin-right: 0;
+}
+.content_block {
+    background-image: url('../img/icon/contetn_backgrnd.jpg');
+    background-repeat: repeat-x repeat-y;
+    margin-bottom: 35px;
+    padding: 50px 80px;
+}
+.content_item_left {
+    border: 1px solid saddlebrown;
+    float: left;
+    width: 380px;
+}
+.news_item {
+    border: 1px solid sandybrown;
+    margin-bottom: 20px;
+}
+.content_caption {
+    border: 1px solid teal;
+}
+.content_item_right {
+    border: 1px solid saddlebrown;
+    float: right;
+    width: 300px;
+}
+.slider {
+    margin: 0 6px;
+}
+footer {
+    border: 1px solid darkcyan;
+
+}
+.footer_address {
+    border: 1px solid rgb(59, 202, 71);
+    float: left;
+    width: 320px;
+    margin-right: 60px;
+    box-sizing: border-box;
+}
+.social_block {
+    border: 1px solid rgb(59, 202, 71);
+    float: left;
+    width: 180px;
+    min-height: 90px;
+}
+.social_list {
+    padding: 0px;
+}
+.social_list>li {
+    display: inline-block;
+}
+.copyright {
+    border: 1px solid rgb(59, 202, 71);
+    float: right;
+    width: 180px;
+    min-height: 90px;
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.content {
+    width: 940px;
+    height: 700px;
+    border: 1px solid lawngreen;
+}
+.content_image {
+    float: left;
+    width: 460px;
+}
+.prev_image {
+    padding: 0px;
+    width: 460px;
+}
+.prev_image>li {
+    border: 1px solid cadetblue;
+    width: 140px;
+    height: 149px;
+    display: inline-block;
+    margin-left: 10px;
+}
+.prev_image>li:last-child {
+    margin-left:0px;
+}
+.content_list {
+    border: 1px solid rosybrown;
+    float: right;
+    width: 400px;
+    min-height: 670px;
+}
+.top_content {
+    border: 1px solid cadetblue;
+    width: 400px;
+}
+.content_row_1{
+    border: 1px solid teal;
+}
+.in_stock {
+    border: 1px solid cadetblue;
+    width: 150px;
+    min-height: 30px;
+    float: left;
+}
+.item_code {
+    border: 1px solid cadetblue;
+    width: 140px;
+    min-height: 30px;
+    float: right;
+}
+.top_content>p {
+    border: 1px solid cadetblue;
+    clear: both;
+    float: left;
+}
+.content_row_2 {
+    border: 1px solid cadetblue;
+    clear: both;
+}
+.item_block {
+    border: 1px solid cadetblue;
+}
+.caption_about_us {
+    border: 1px solid khaki;
+}
+.about_us {
+    border: 1px solid khaki;
+}
+.about_us_left {
+    border: 1px solid khaki;
+    float: left;
+    width: 380px;
+}
+.about_us_right {
+    border: 1px solid khaki;
+    float: right;
+    width: 460px;
+}
+.about_us_bottom {
+    border: 1px solid khaki;
+}
+.goods_filter {
+    float: left;
+    width: 220px;
+}
+.product_block {
+    border: 1px solid yellowgreen;
+    float: right;
+    width: 700px;
+}
+.product_item {
+    border: 1px solid green;
+    display: inline-block;
+    width: 220px;
+    vertical-align: top;
+    text-align: center;
+    margin-right: 13px;
+    margin-bottom: 15px;
+}
+.product_item:nth-child(3n+3) {
+    margin-right: 0px;
+}
+.pagination {
+    border: 1px solid hotpink;
+}
+.pagination_list>ul>li {
+    display: inline-block;
 }
