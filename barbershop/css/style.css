@@ -1,3 +1,7 @@
+* {
+    box-sizing: outline-box;
+}
+
 html,
 body {
     min-width: 1122px;
@@ -11,67 +15,86 @@ body {
     background-size: 1122px auto;
 }
 header {
-    border: 1px solid hotpink;
+    outline: 1px solid blue;
 }
 .container {
-    border: 1px solid salmon;
+    outline: 1px solid blue;
     width: 940px;
     margin: 0 auto;
-    padding: 0;
+    padding: 0 10px;
 }
 h1 {
-    border: 1px solid sandybrown;
+    outline: 1px solid blue;
 }
-.main_navigation {
-    float: left;
-    border: 2px solid darkgreen;
-    width: 780px;
+h2 {
+    outline: 1px solid blue;
+}
+.h3 {
+    outline: 1px solid blue;
 }
 .logo_head {
     float: left;
-    border: 1px solid aqua;
+    outline: 1px solid blue;
+}
+.main_navigation {
+    float: left;
+    outline: 2px solid blue;
+    width: 680px;
 }
 .menu {
-    border: 1px solid lawngreen;
     padding: 0px;
     float: left;
+    font-size: 0px;
 }
-.menu>li {
+.menu li {
     display: inline-block;
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-right: 40px;
+}
+.menu li:last-child {
+    margin-right: 0px;
 }
 .login_block {
     float: right;
-    border: 2px solid darkgreen;
+    outline: 2px solid blue;
     width: 140px;
+}
+.login_block a {
+    display: block;
+    text-transform: uppercase;
+    margin-right: 20px;
+    
 }
 .login_form {
     display: none;
 }
 .breadcrumbs {
-    border: 1px solid fuchsia;
+    outline: 1px solid blue;
+    font-size:0px;
 }
 .breadcrumbs_list {
     padding: 0px;
 }
-.breadcrumbs_list>li {
+.breadcrumbs_list li {
     display: inline-block;
+    font-size: 16px;
 }
 .index_logo {
-    border: 1px solid rgb(59, 202, 71);
+    outline: 1px solid blue;
     width: 368px;
     height: 204px;
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 25px;
 }
 .advantages {
-    border: 1px solid rgb(59, 202, 71);
+    outline: 1px solid blue;
     margin-bottom: 80px;
 }
 .advantages_caption {}
 
 .advantages_item {
-    border: 1px solid rgb(59, 202, 71);
+    outline: 1px solid blue;
     float: left;
     width: 297px;    
     margin-right: 20px;
@@ -86,38 +109,39 @@ h1 {
     padding: 50px 80px;
 }
 .content_item_left {
-    border: 1px solid saddlebrown;
+    outline: 1px solid blue;
     float: left;
     width: 380px;
 }
 .news_item {
-    border: 1px solid sandybrown;
+    outline: 1px solid blue;
     margin-bottom: 20px;
 }
 .content_caption {
-    border: 1px solid teal;
+    outline: 1px solid blue;
 }
 .content_item_right {
-    border: 1px solid saddlebrown;
+    outline: 1px solid blue;
     float: right;
     width: 300px;
 }
 .slider {
-    margin: 0 6px;
+    margin:0px;
+    padding:0px;
 }
 footer {
-    border: 1px solid darkcyan;
+    outline: 1px solid blue;
 
 }
 .footer_address {
-    border: 1px solid rgb(59, 202, 71);
+    outline: 1px solid blue;
     float: left;
     width: 320px;
     margin-right: 60px;
-    box-sizing: border-box;
+    box-sizing: outline-box;
 }
 .social_block {
-    border: 1px solid rgb(59, 202, 71);
+    outline: 1px solid blue;
     float: left;
     width: 180px;
     min-height: 90px;
@@ -129,7 +153,7 @@ footer {
     display: inline-block;
 }
 .copyright {
-    border: 1px solid rgb(59, 202, 71);
+    outline: 1px solid blue;
     float: right;
     width: 180px;
     min-height: 90px;
@@ -142,106 +166,109 @@ footer {
 .content {
     width: 940px;
     height: 700px;
-    border: 1px solid lawngreen;
+    outline: 1px solid blue;
 }
 .content_image {
     float: left;
     width: 460px;
 }
-.prev_image {
-    padding: 0px;
-    width: 460px;
-}
-.prev_image>li {
-    border: 1px solid cadetblue;
-    width: 140px;
-    height: 149px;
-    display: inline-block;
-    margin-left: 10px;
-}
-.prev_image>li:last-child {
-    margin-left:0px;
+.image_item {
+    outline: 1px solid blue;
+    float: left;
 }
 .content_list {
-    border: 1px solid rosybrown;
+    outline: 1px solid blue;
     float: right;
     width: 400px;
     min-height: 670px;
 }
 .top_content {
-    border: 1px solid cadetblue;
+    outline: 1px solid blue;
     width: 400px;
 }
 .content_row_1{
-    border: 1px solid teal;
+    outline: 1px solid blue;
 }
 .in_stock {
-    border: 1px solid cadetblue;
+    outline: 1px solid blue;
     width: 150px;
     min-height: 30px;
     float: left;
 }
 .item_code {
-    border: 1px solid cadetblue;
+    outline: 1px solid blue;
     width: 140px;
     min-height: 30px;
     float: right;
 }
 .top_content>p {
-    border: 1px solid cadetblue;
+    outline: 1px solid blue;
     clear: both;
     float: left;
 }
 .content_row_2 {
-    border: 1px solid cadetblue;
+    outline: 1px solid blue;
     clear: both;
 }
 .item_block {
-    border: 1px solid cadetblue;
+    outline: 1px solid blue;
 }
 .caption_about_us {
-    border: 1px solid khaki;
+    outline: 1px solid blue;
 }
 .about_us {
-    border: 1px solid khaki;
+    outline: 1px solid blue;
 }
 .about_us_left {
-    border: 1px solid khaki;
+    outline: 1px solid blue;
     float: left;
     width: 380px;
 }
 .about_us_right {
-    border: 1px solid khaki;
+    outline: 1px solid blue;
     float: right;
     width: 460px;
 }
+.about_us_right>table {
+    outline: 1px solid blue;
+    width: 100px;
+}
 .about_us_bottom {
-    border: 1px solid khaki;
+    outline: 1px solid blue;
 }
 .goods_filter {
     float: left;
     width: 220px;
 }
 .product_block {
-    border: 1px solid yellowgreen;
+    outline: 1px solid blue;
     float: right;
     width: 700px;
 }
+.product_list {
+    font-size: 0px;
+    padding: 0px;
+}
 .product_item {
-    border: 1px solid green;
+    outline: 1px solid blue;
     display: inline-block;
     width: 220px;
     vertical-align: top;
     text-align: center;
-    margin-right: 13px;
-    margin-bottom: 15px;
+    font-size: 16px;
+    
 }
 .product_item:nth-child(3n+3) {
     margin-right: 0px;
 }
 .pagination {
-    border: 1px solid hotpink;
+    outline: 1px solid blue;
+    font-size: 0px;
 }
-.pagination_list>ul>li {
+.pagination ul {
+    padding: 0px;
+}
+.pagination li {
     display: inline-block;
+    font-size: 16px;
 }
