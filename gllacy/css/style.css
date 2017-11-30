@@ -1,0 +1,257 @@
+* {box-sizing: border-box;}
+
+body {
+    min-width: 1200px;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+
+}
+main {
+    margin: 0px;
+}
+footer {
+
+}
+h1 {
+    margin: 0px;
+}
+h2 {
+    margin: 0px;
+}
+h3 {
+    margin: 0px;
+}
+p {
+    margin: 0px;
+}
+.container {
+    outline: 2px solid darkcyan;
+    width: 1146px;
+    margin: 0 auto;
+    padding: 0 0px;
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.logo {
+    outline: 1px solid saddlebrown;
+    float: left;
+    width: 154px;
+}
+.main_navigation {
+    outline: 1px solid sandybrown;
+    float: left;
+    width: 540px;
+    font-size: 0px;
+}
+.main_navigation ul {
+    padding: 0px;
+}
+.main_menu li {
+    display: inline-block;
+    font-size: 16px;
+}
+.right_head_block {
+    width: 170px;
+    outline: 1px solid darkgoldenrod;
+    float: right;
+}
+.submenu, 
+.login_form,
+.search_form,
+.basket_list {
+    display: none;
+}
+.search {
+    outline: 1px solid green;
+    float: left;
+}
+.login {
+    outline: 1px solid green;
+    float: left;
+}
+.basket_shop {
+    outline: 1px solid green;
+    float: right;
+}
+.timetable {
+    clear: both;
+    outline: 1px solid green;
+    width: 166px;
+}
+.slider {
+    outline: 1px solid firebrick;
+    margin: 0 auto;
+    text-align: center;
+}
+.slider_list {
+    padding: 0px;
+
+}
+.slider_item {
+    display: inline-block;
+}
+.slider_item:not(:nth-child(1)) {
+    display: none;
+}
+.gallery_img {
+
+}
+
+.stock_block {
+    outline: 1px solid saddlebrown;
+}
+.stock_item {
+    outline: 1px solid firebrick;
+    float: left;
+    margin-left: 26px;
+    width: 557px;
+}
+.stock_item:first-child {
+    margin-left: 0px;
+}
+.products {
+    font-size: 0px;
+}
+.products_list {
+    outline: 1px solid saddlebrown;
+    font-size: 0px;
+}
+
+.product_item {
+    outline: 1px solid lawngreen;
+    display: inline-block;
+    vertical-align: top;
+    font-size:16px;
+    width: 267px;
+    margin-left: 25px;
+    margin-bottom: 15px;
+
+}
+.product_item:nth-child(4n+1) {
+    margin-left: 0px;
+}
+.info_block {
+    outline: 1px solid rgb(255, 1, 1);
+}
+.info_list {
+    outline: 1px solid rgb(0, 255, 0);
+}
+.info_top_text {
+    outline: 1px solid tomato;
+    margin: 0px;
+}
+.info_item {
+    width: 540px;
+    outline: 1px solid rebeccapurple;
+    float: left;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.blog_delivery {
+    outline: 1px solid paleturquoise;
+}
+.blog_item {
+    outline: 1px solid indigo;
+    float: left;
+    width: 557px;
+    margin-left: 26px;
+}
+.blog_item:first-child {
+    margin-left: 0px;
+}
+.map {
+
+}
+iframe {
+    width: 100%;
+}
+.contact_block {
+    outline: 1px solid slateblue;
+    width: 302px;
+}
+.feed_back {
+    display: none;
+}
+.social_block {
+    float: left;
+    outline: 1px solid indianred;
+    width: 267px;
+    font-size: 0px;
+    margin-right: 130px;
+}
+.social_block ul {
+    padding: 0px;
+}
+.social_list li {
+    display: inline-block;
+    font-size: 16px;
+}
+.footer_menu {
+    float: left;
+    outline: 1px solid rebeccapurple;
+    width: 330px;
+    font-size: 0px;
+}
+.footer_menu ul {
+    padding: 0px;
+    margin: auto;
+}
+.footer_menu li {
+    display: inline-block;
+    font-size: 16px;
+}
+.academy_block {
+    width:190px;
+    float: right;
+    outline: 1px solid indianred;    
+}
+.main_top {
+    outline: 1px solid olivedrab;
+}
+.breadcrumbs {
+    outline: 1px solid peru;
+    font-size: 0px;
+}
+.breadcrumbs ul {
+    padding: 0px;
+}
+.breadcrumbs ul>li {
+   display: inline-block;
+   font-size: 16px;
+}
+.main_top>h1 {
+    outline: 1px solid rgb(9, 22, 201);    
+}
+.main_filter {
+    outline: 1px solid yellow;
+    width: 900px;
+}
+.popularity_block {
+    display: inline-block;
+    width: 193px;
+}
+.filter_price {
+    width: 219px;
+    display: inline-block;
+}
+.fat_block {
+    width: 400px;
+    display: inline-block;
+}
+.pagination_block {
+    font-size: 0px;
+}
+.pagination_block ul {
+    padding: 0px;
+}
+.pagination_block ul>li{
+    display: inline-block;
+    font-size: 16px;
+}

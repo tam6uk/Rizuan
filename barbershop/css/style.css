@@ -1,0 +1,317 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    min-width: 1122px;
+    min-height: 1750px;
+    margin: 0;
+    padding: 0;
+  }
+  
+body {
+    background-color: white;
+    background-size: 1122px auto;
+}
+header {
+    outline: 1px solid blue;
+}
+main {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.container {
+    outline: 1px solid blue;
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+h1 {
+    outline: 1px solid blue;
+    text-transform: uppercase;
+}
+h2 {
+    outline: 1px solid blue;
+    text-transform: uppercase;
+}
+h3 {
+    outline: 1px solid blue;
+    text-transform: uppercase;
+    font-size: 24px;
+}
+.logo_head {
+    float: left;
+    outline: 1px solid blue;
+}
+.main_navigation {
+    float: left;
+    outline: 2px solid blue;
+    width: 660px;
+}
+.menu {
+    padding: 0px;
+    float: left;
+    font-size: 0px;
+}
+.menu li {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-right: 20px;
+}
+.menu li:last-child {
+    margin-right: 0px;
+}
+.login_block {
+    float: right;
+    outline: 2px solid blue;
+    width: 140px;
+}
+.login_block a {
+    display: block;
+    text-transform: uppercase;
+    margin-right: 20px;
+    
+}
+.login_form {
+    display: none;
+}
+.breadcrumbs {
+    outline: 1px solid blue;
+    font-size:0px;
+}
+.breadcrumbs_list {
+    padding: 0px;
+}
+.breadcrumbs_list li {
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 40px;
+}
+.index_logo {
+    outline: 1px solid blue;
+    width: 368px;
+    height: 204px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.advantages {
+    outline: 1px solid blue;
+    width: 920px;
+}
+.advantages_caption {}
+
+.advantages_item {
+    outline: 1px solid blue;
+    float: left;
+    width: 293px;    
+    margin-right: 20px;
+}
+.advantages_item:last-child {
+    margin-right: 0;
+}
+.content_block {
+    background-image: url('../img/icon/contetn_backgrnd.jpg');
+    background-repeat: repeat-x repeat-y;
+    margin-bottom: 35px;
+    padding: 50px 80px;
+}
+.content_item_left {
+    outline: 1px solid blue;
+    float: left;
+    width: 380px;
+}
+.news_item {
+    outline: 1px solid blue;
+    margin-bottom: 20px;
+}
+.content_caption {
+    outline: 1px solid blue;
+}
+.content_item_right {
+    outline: 1px solid blue;
+    float: right;
+    width: 300px;
+}
+.slider {
+    margin:0px;
+    padding:0px;
+}
+.feedback_form {
+    outline: 1px solid blue;
+    width: 300px;
+}
+.feedback_item input {
+    width: 100%;
+}
+.feedback_item {
+    float: left;
+    outline: 1px solid blue;
+    width: 140px;
+    margin-top: 16px;
+
+}
+.feedback_item:nth-child(2n) {
+    float: right;
+}
+.feedback_form button {
+    margin-top: 20px;
+    display: inline-block;
+
+}
+
+footer {
+    outline: 1px solid blue;
+    padding: 0px;
+
+}
+.footer_address {
+    outline: 1px solid blue;
+    float: left;
+    width: 380px;
+    margin-right: 20px;
+    box-sizing: outline-box;
+}
+.social_block {
+    outline: 1px solid blue;
+    float: left;
+    width: 300px;
+}
+.social_block ul {
+    font-size: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+.social_list>li {
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 6px;
+}
+.copyright {
+    outline: 1px solid blue;
+    float: right;
+    width: 140px;
+}
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.content {
+    width: 920px;
+    outline: 1px solid blue;
+}
+.content_image {
+    float: left;
+    width: 460px;
+}
+.image_item {
+    outline: 1px solid blue;
+    float: left;
+}
+.content_list {
+    outline: 1px solid blue;
+    float: right;
+    width: 400px;
+}
+.top_content {
+    outline: 1px solid blue;
+    width: 400px;
+}
+.content_row_1{
+    outline: 1px solid blue;
+    margin-bottom: 40px;
+}
+.in_stock {
+    outline: 1px solid blue;
+    width: 150px;
+    min-height: 30px;
+    float: left;
+}
+.item_code {
+    outline: 1px solid blue;
+    width: 140px;
+    min-height: 30px;
+    float: right;
+}
+.top_content p {
+    outline: 1px solid blue;
+    clear: both;
+    margin: 0px;
+}
+.content_row_2 {
+    margin-top: 43px;
+    outline: 1px solid blue;
+    clear: both;
+}
+.item_block {
+    margin-top: 65px;
+    outline: 1px solid blue;
+}
+.caption_about_us {
+    width: 940px;
+    outline: 1px solid blue;
+    font-size: 25px;
+}
+.caption_about_us span {
+    text-transform: uppercase;
+}
+.about_us {
+    outline: 1px solid blue;
+}
+.about_us_left {
+    outline: 1px solid blue;
+    float: left;
+    width: 380px;
+}
+.about_us_right {
+    outline: 1px solid blue;
+    float: right;
+    width: 460px;
+}
+.about_us_right>table {
+    outline: 1px solid blue;
+    width: 100%;
+}
+.about_us_bottom {
+    outline: 1px solid blue;
+}
+.goods_filter {
+    float: left;
+    width: 220px;
+}
+.product_block {
+    outline: 1px solid blue;
+    float: right;
+    width: 700px;
+}
+.product_list {
+    font-size: 0px;
+    padding: 0px;
+}
+.product_item {
+    outline: 1px solid blue;
+    display: inline-block;
+    width: 220px;
+    vertical-align: top;
+    text-align: center;
+    font-size: 16px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    
+}
+.product_item:nth-child(3n+3) {
+    margin-right: 0px;
+}
+.pagination {
+    outline: 1px solid blue;
+    font-size: 0px;
+}
+.pagination ul {
+    padding: 0px;
+}
+.pagination li {
+    display: inline-block;
+    font-size: 16px;
+}
