@@ -121,16 +121,18 @@ p {
 }
 .products_list {
     outline: 1px solid saddlebrown;
-    font-size: 16px;
+    font-size: 0px;
 }
 
 .product_item {
     outline: 1px solid lawngreen;
     display: inline-block;
     vertical-align: top;
-    width: 268px;
-    margin-left: 16px;
+    font-size:16px;
+    width: 267px;
+    margin-left: 25px;
     margin-bottom: 15px;
+
 }
 .product_item:nth-child(4n+1) {
     margin-left: 0px;
@@ -180,8 +182,9 @@ iframe {
 .social_block {
     float: left;
     outline: 1px solid indianred;
-    width: 290px;
+    width: 267px;
     font-size: 0px;
+    margin-right: 130px;
 }
 .social_block ul {
     padding: 0px;
@@ -193,7 +196,7 @@ iframe {
 .footer_menu {
     float: left;
     outline: 1px solid rebeccapurple;
-    width: 350px;
+    width: 330px;
     font-size: 0px;
 }
 .footer_menu ul {
@@ -205,6 +208,7 @@ iframe {
     font-size: 16px;
 }
 .academy_block {
+    width:280px;
     float: right;
     outline: 1px solid indianred;    
 }
