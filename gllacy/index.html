@@ -9,120 +9,119 @@
 
 <body>
 
-	<header>
-		<div class="container clearfix">
-			<div class="top_header clearfix">
-				<div class="logo">
-					<a href="index.html">
-						<img src="img/Logo.png" width="154" height="64" alt="Gllacy Shop">
-					</a>
-				</div>
-				<nav class="main_navigation">
-					<ul class="main_menu">
+	<header class="container clearfix">
+
+		<div class="logo">
+			<a href="index.html">
+				<img src="img/Logo.png" width="154" height="64" alt="Gllacy Shop">
+			</a>
+		</div>
+
+		<nav class="main_navigation">
+			<ul class="main_menu">
+				<li>
+					<a href="catalog.html">Каталог</a>
+					<ul class="submenu">
 						<li>
-							<a href="catalog.html">Каталог</a>
-							<ul class="submenu">
-								<li>
-									<span>Новинки</span>
-								</li>
-								<li>
-									<a href="catalog.html">Сливочное</a>
-								</li>
-								<li>
-									<a href="#">Щербеты</a>
-								</li>
-								<li>
-									<a href="#">Фруктовый лед</a>
-								</li>
-								<li>
-									<a href="#">Мелорин</a>
-								</li>
-							</ul>
+							<span>Новинки</span>
 						</li>
 						<li>
-							<a href="#">Доставка и оплата</a>
+							<a href="catalog.html">Сливочное</a>
 						</li>
 						<li>
-							<a href="#">О Компании</a>
+							<a href="#">Щербеты</a>
+						</li>
+						<li>
+							<a href="#">Фруктовый лед</a>
+						</li>
+						<li>
+							<a href="#">Мелорин</a>
 						</li>
 					</ul>
-				</nav>
-				<div class="search">
-					<button class="btn" type="submit">Поиск</button>
-					<form class="search_form">
-						<label for="search">Поиск</label>
-						<input type="text" id="search" name="search_input" placeholder="Что ищем?">
-					</form>
-				</div>
-				<div class="login">
-					<button class="btn" type="submit">Вход</button>
-
-					<!-- Форма для входа -->
-					<form class="login_form" method="get">
-						<label for="email">Электронная почта</label>
-						<input class="login_inpt" id="email" type="text" name="email" placeholder="Электронная почта">
-						<label for="password">Пароль</label>
-						<input class="password_inpt" id="password" type="password" name="password" placeholder="Пароль">
-						<div class="form_nav">
-							<button class="btn" type="submit">Войти</button>
-							<ul class="login_link">
-								<li>
-									<a href="#">Забыли пароль?</a>
-								</li>
-								<li>
-									<a href="#">Новая регистрация</a>
-								</li>
-							</ul>
-						</div>
-					</form>
-				</div>
-
-				<div class="basket_shop">
-					<button class="btn" type="submit">Пусто</button>
-					<!--	<div class="basket_list">
-						 <table>
-							<tr>
-								<td class="close_icon">Закрывающая иконка</td>
-								<td>
-									<img src="#" width="33" height="33" alt="">
-								</td>
-								<td><span>Название товара</span></td>
-								<td>
-									<span class="product_weight">1,5</span>кг х
-									<span class="product_price">200</span> руб</td>
-								<td>
-									<span class="total_price_product">300 руб</span>
-								</td>
-							</tr>
-							<tr>
-								<td class="close_icon">Закрывающая иконка</td>
-								<td>
-									<img src="" width="33" height="33" alt="">
-								</td>
-								<td>
-									<span class="product_name"> Название товара </span>
-								</td>
-								<td>
-									<span class="product_weight">1,5</span>кг х
-									<span class="product_price">200</span> руб</td>
-								<td>
-									<span class="total_price_product">300 руб</span>
-								</td>
-							</tr>
-						</table>
-						<div class="basket_link">
-							<span class="total">Итого: 750 руб.</span>
-							<button class="btn" type="submit">Оформить заказ</button>
-						</div> -->
-				</div>
+				</li>
+				<li>
+					<a href="#">Доставка и оплата</a>
+				</li>
+				<li>
+					<a href="#">О компании</a>
+				</li>
+			</ul>
+		</nav>
+		<div class="right_head_block clearfix">
+			<div class="search">
+				<button class="btn" type="submit">Поиск</button>
+				<form class="search_form">
+					<label for="search">Поиск</label>
+					<input type="text" id="search" name="search_input" placeholder="Что ищем?">
+				</form>
 			</div>
-			<div class="bottom_head clearfix">
-				<div class="timetable">
-					<p>
-						с 10 до 20, ежедневно
-						<span class="phone">8 812 450-25-25</span>
-					</p>
-				</div>
+			<div class="login">
+				<button class="btn" type="submit">Вход</button>
+
+				<!-- Форма для входа -->
+				<form class="login_form" method="get">
+					<label for="email">Электронная почта</label>
+					<input class="login_inpt" id="email" type="text" name="email" placeholder="Электронная почта">
+					<label for="password">Пароль</label>
+					<input class="password_inpt" id="password" type="password" name="password" placeholder="Пароль">
+					<div class="form_nav">
+						<button class="btn" type="submit">Войти</button>
+						<ul class="login_link">
+							<li>
+								<a href="#">Забыли пароль?</a>
+							</li>
+							<li>
+								<a href="#">Новая регистрация</a>
+							</li>
+						</ul>
+					</div>
+				</form>
+			</div>
+
+			<div class="basket_shop">
+				<button class="btn" type="submit">Пусто</button>
+				<!--	<div class="basket_list">
+					<table>
+					<tr>
+					<td class="close_icon">Закрывающая иконка</td>
+					<td>
+					<img src="#" width="33" height="33" alt="">
+					</td>
+					<td><span>Название товара</span></td>
+					<td>
+					<span class="product_weight">1,5</span>кг х
+					<span class="product_price">200</span> руб</td>
+					<td>
+					<span class="total_price_product">300 руб</span>
+					</td>
+					</tr>
+					<tr>
+					<td class="close_icon">Закрывающая иконка</td>
+					<td>
+					<img src="" width="33" height="33" alt="">
+					</td>
+					<td>
+					<span class="product_name"> Название товара </span>
+					</td>
+					<td>
+					<span class="product_weight">1,5</span>кг х
+					<span class="product_price">200</span> руб</td>
+					<td>
+					<span class="total_price_product">300 руб</span>
+					</td>
+					</tr>
+					</table>
+					<div class="basket_link">
+					<span class="total">Итого: 750 руб.</span>
+					<button class="btn" type="submit">Оформить заказ</button>
+					</div> -->
+			</div>
+
+			<div class="timetable">
+				<p>
+					с 10 до 20, ежедневно
+					<span class="phone">8 812 450-25-25</span>
+				</p>
 			</div>
 		</div>
 	</header>
@@ -149,17 +148,12 @@
 						<h2>Пломбир с помадкой и клубничный щербет</h2>
 						<a class="btn" href="#">Давайте оба!</a>
 					</li>
-					<li class="slider_controls">
-							<input type="radio" name="slider element" id="slide_1" />
-							<input type="radio" name="slider element" id="slide_2" />
-							<input type="radio" name="css-fadeshow" id="slide_3" />
-					</li>
 				</ul>
+				<input type="radio" name="slider element" id="slide_1" />
+				<input type="radio" name="slider element" id="slide_2" />
+				<input type="radio" name="slider element" id="slide_3" />
 			</div>
-			<!-- ты не предусмотрел никакую навигацию между слайдерами, это тоже нужно сверстать ведь -->
-		</div>
 
-		<div class="container clearfix">
 			<div class="stock_block clearfix">
 				<div class="stock_item">
 					<div class="stock_info">
@@ -234,8 +228,8 @@
 					</div>
 				</div>
 			</div>
-		
-		<!-- Блок с информацией на сайте -->
+
+			<!-- Блок с информацией на сайте -->
 
 			<div class="info_block">
 				<div class="info_list clearfix">
@@ -282,9 +276,8 @@
 						и не слать всякой ненужной ерунды. Честно =)
 					</p>
 
-					<form class="delivery" method="get">
-						<label for="dispatch">Электронная почта</label>
-						<input id="dispatch" type="text" name="email" value="email" placeholder="Электронная почта">
+					<form class="delivery" action="#" method="get">
+						<input id="dispatch" type="text" name="email" placeholder="Электронная почта">
 						<button class="btn" type="submit">Отправить</button>
 					</form>
 				</div>
@@ -292,7 +285,7 @@
 		</div>
 
 		<div class="map">
-				<iframe src="https://yandex.ru/map-widget/v1/-/CBarA2vqSA" width="1200" height="428" frameborder="0"></iframe>
+			<iframe src="https://yandex.ru/map-widget/v1/-/CBarA2vqSA" width="1200" height="428" frameborder="0"></iframe>
 			<div class="contact_block">
 				<div class="contact_list">
 					<span>

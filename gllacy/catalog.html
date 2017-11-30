@@ -8,125 +8,121 @@
 </head>
 
 <body>
-	<header>
-		<div class="container clearfix">
-			<div class="top_header clearfix">
-				<div class="logo">
-					<a href="index.html">
-						<img src="img/Logo.png" width="154" height="64" alt="Gllacy Shop">
-					</a>
-				</div>
-				<nav class="main_navigation">
-					<ul class="main_menu">
+	<header class="container clearfix">
+		<div class="logo">
+			<a href="index.html">
+				<img src="img/Logo.png" width="154" height="64" alt="Gllacy Shop">
+			</a>
+		</div>
+		<nav class="main_navigation">
+			<ul class="main_menu">
+				<li>
+					<a class="active">Каталог</a>
+					<ul class="submenu">
 						<li>
-							<a class="active">Каталог</a>
-							<ul class="submenu">
-								<li>
-									<span>Новинки</span>
-								</li>
-								<li>
-									<a class="active" href="catalog.html">Сливочное</a>
-								</li>
-								<li>
-									<a href="#">Щербеты</a>
-								</li>
-								<li>
-									<a href="#">Фруктовый лед</a>
-								</li>
-								<li>
-									<a href="#">Мелорин</a>
-								</li>
-							</ul>
+							<span>Новинки</span>
 						</li>
 						<li>
-							<a href="#">Доставка и оплата</a>
+							<a class="active" href="catalog.html">Сливочное</a>
 						</li>
 						<li>
-							<a href="#">О Компании</a>
+							<a href="#">Щербеты</a>
+						</li>
+						<li>
+							<a href="#">Фруктовый лед</a>
+						</li>
+						<li>
+							<a href="#">Мелорин</a>
 						</li>
 					</ul>
-				</nav>
-				<div class="search">
-					<button class="btn" type="submit">Поиск</button>
-					<form class="search_form">
-						<label for="search">Поиск</label>
-						<input type="text" id="search" name="search_input" value="Что ищем?">
-					</form>
-				</div>
+				</li>
+				<li>
+					<a href="#">Доставка и оплата</a>
+				</li>
+				<li>
+					<a href="#">О Компании</a>
+				</li>
+			</ul>
+		</nav>
+		<div class="right_head_block clearfix">
+			<div class="search">
+				<button class="btn" type="submit">Поиск</button>
+				<form class="search_form">
+					<label for="search">Поиск</label>
+					<input type="text" id="search" name="search_input" value="Что ищем?">
+				</form>
+			</div>
 
-				<div class="login">
-					<button class="btn" type="submit">Вход</button>
+			<div class="login">
+				<button class="btn" type="submit">Вход</button>
 
-					<!-- Форма для входа -->
+				<!-- Форма для входа -->
 
-					<form class="login_form" method="get" action="#">
-						<label for="email">Электронная почта</label>
-						<input class="login_inpt" id="email" type="text" name="email" value="email">
-						<label for="password">Пароль</label>
-						<input class="password_inpt" id="password" type="password" name="password" value="password">
-						<div class="form_nav">
-							<button class="btn" type="submit">Войти</button>
-							<ul class="login_link">
-								<li>
-									<a href="#">Забыли пароль?</a>
-								</li>
-								<li>
-									<a href="#">Новая регистрация</a>
-								</li>
-							</ul>
-						</div>
-					</form>
-				</div>
+				<form class="login_form" method="get" action="#">
+					<label for="email">Электронная почта</label>
+					<input class="login_inpt" id="email" type="text" name="email" value="email">
+					<label for="password">Пароль</label>
+					<input class="password_inpt" id="password" type="password" name="password" value="password">
+					<div class="form_nav">
+						<button class="btn" type="submit">Войти</button>
+						<ul class="login_link">
+							<li>
+								<a href="#">Забыли пароль?</a>
+							</li>
+							<li>
+								<a href="#">Новая регистрация</a>
+							</li>
+						</ul>
+					</div>
+				</form>
+			</div>
 
-				<!-- Таблица заказов -->
+			<!-- Таблица заказов -->
 
-				<div class="basket_shop">
-					<button class="btn" type="submit">2 товара</button>
-					<div class="basket_list">
-						<table>
-							<tr>
-								<td class="close_icon">Закрывающая иконка</td>
-								<td>
-									<img src="img/prod_1.png" width="33" height="33" alt="">
-								</td>
-								<td>Пломбир с апельсиновым джемом</td>
-								<td>
-									<span class="product_weight">1,5</span>кг х
-									<span class="product_price">200</span> руб</td>
-								<td>
-									<span class="total_price_product">300 руб</span>
-								</td>
-							</tr>
-							<tr>
-								<td class="close_icon">Закрывающая иконка</td>
-								<td>
-									<img src="img/prod_3.png" width="33" height="33" alt="">
-								</td>
-								<td>
-									<span class="product_name">Пломбир с апельсиновым джемом</span>
-								</td>
-								<td>
-									<span class="product_weight">1,5</span>кг х
-									<span class="product_price">200</span> руб</td>
-								<td>
-									<span class="total_price_product">300 руб</span>
-								</td>
-							</tr>
-						</table>
-						<div class="basket_link">
-							<span class="total">Итого: 750 руб.</span>
-							<button class="btn" type="submit">Оформить заказ</button>
-						</div>
+			<div class="basket_shop">
+				<button class="btn" type="submit">2 товара</button>
+				<div class="basket_list">
+					<table>
+						<tr>
+							<td class="close_icon">Закрывающая иконка</td>
+							<td>
+								<img src="img/prod_1.png" width="33" height="33" alt="">
+							</td>
+							<td>Пломбир с апельсиновым джемом</td>
+							<td>
+								<span class="product_weight">1,5</span>кг х
+								<span class="product_price">200</span> руб</td>
+							<td>
+								<span class="total_price_product">300 руб</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="close_icon">Закрывающая иконка</td>
+							<td>
+								<img src="img/prod_3.png" width="33" height="33" alt="">
+							</td>
+							<td>
+								<span class="product_name">Пломбир с апельсиновым джемом</span>
+							</td>
+							<td>
+								<span class="product_weight">1,5</span>кг х
+								<span class="product_price">200</span> руб</td>
+							<td>
+								<span class="total_price_product">300 руб</span>
+							</td>
+						</tr>
+					</table>
+					<div class="basket_link">
+						<span class="total">Итого: 750 руб.</span>
+						<button class="btn" type="submit">Оформить заказ</button>
 					</div>
 				</div>
 			</div>
-			<div class="bottom_head">
-				<div class="timetable">
-					<p>
-						с 10 до 20, ежедневно
-						<span class="phone">8 812 450-25-25</span>
-					</p>
-				</div>
+			<div class="timetable">
+				<p>
+					с 10 до 20, ежедневно
+					<span class="phone">8 812 450-25-25</span>
+				</p>
 			</div>
 		</div>
 	</header>
@@ -167,7 +163,7 @@
 							<label for="amount">Цена:
 								<span class="minimum_price">100</span> руб. -
 								<span class="maximum_price">500</span> руб.</label>
-							<input type="text" id="amount" readonly>
+							<input type="range" id="amount" readonly>
 							<div id="slider_range"></div>
 						</div>
 
@@ -200,193 +196,190 @@
 					</div>
 				</form>
 			</div>
-		</div>
-		<div class="container clearfix">
-			<div class="products">
-				<div class="product_item">
-					<div class="products_img">
-						<img src="img/prod_1.png" width="267" height="267" alt="Мороженое с апельсиновым джемом">
-						<span class="price">310&#8381;/кг</span>
-					</div>
-					<div class="products_nav">
-						<a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-						<div class="product_btn">
-							<a class="btn" href="#">Быстрый просмотр</a>
+
+			<div class="container clearfix">
+				<div class="products">
+					<div class="product_item">
+						<div class="products_img">
+							<img src="img/prod_1.png" width="267" height="267" alt="Мороженое с апельсиновым джемом">
+							<span class="price">310&#8381;/кг</span>
+						</div>
+						<div class="products_nav">
+							<a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+							<div class="product_btn">
+								<a class="btn" href="#">Быстрый просмотр</a>
+							</div>
 						</div>
 					</div>
-				</div>
 
-				<div class="product_item">
-					<div class="products_img">
-						<img src="img/prod_2.png" width="267" height="267" alt="Мороженое с кусочками шоколада">
-						<span class="price">380&#8381;/кг</span>
-					</div>
-					<div class="products_nav">
-						<a href="#">Сливочное-кофейное с кусочками шоколада</a>
-						<div class="product_btn">
-							<a class="btn" href="#">Быстрый просмотр</a>
+					<div class="product_item">
+						<div class="products_img">
+							<img src="img/prod_2.png" width="267" height="267" alt="Мороженое с кусочками шоколада">
+							<span class="price">380&#8381;/кг</span>
+						</div>
+						<div class="products_nav">
+							<a href="#">Сливочное-кофейное с кусочками шоколада</a>
+							<div class="product_btn">
+								<a class="btn" href="#">Быстрый просмотр</a>
+							</div>
 						</div>
 					</div>
-				</div>
 
-				<div class="product_item">
-					<div class="products_img">
-						<img src="img/prod_3.png" width="267" height="267" alt="Мороженое с присыпкой из белого шоколада">
-						<span class="price">355&#8381;/кг</span>
-					</div>
-					<div class="products_nav">
-						<a href="#">Сливочное-клубничное с присыпкой из белого шоколада</a>
-						<div class="product_btn">
-							<a class="btn" href="#">Быстрый просмотр</a>
+					<div class="product_item">
+						<div class="products_img">
+							<img src="img/prod_3.png" width="267" height="267" alt="Мороженое с присыпкой из белого шоколада">
+							<span class="price">355&#8381;/кг</span>
+						</div>
+						<div class="products_nav">
+							<a href="#">Сливочное-клубничное с присыпкой из белого шоколада</a>
+							<div class="product_btn">
+								<a class="btn" href="#">Быстрый просмотр</a>
+							</div>
 						</div>
 					</div>
-				</div>
 
-				<div class="product_item">
-					<div class="products_img">
-						<img src="img/prod_4.png" width="267" height="267" alt="Крем-брюле с карамельной подливкой">
-						<span class="price">415&#8381;/кг</span>
-					</div>
-					<div class="products_nav">
-						<a href="#">Сливочное крем-брюле с карамельной подливкой</a>
-						<div class="product_btn">
-							<a class="btn" href="#">Быстрый просмотр</a>
+					<div class="product_item">
+						<div class="products_img">
+							<img src="img/prod_4.png" width="267" height="267" alt="Крем-брюле с карамельной подливкой">
+							<span class="price">415&#8381;/кг</span>
+						</div>
+						<div class="products_nav">
+							<a href="#">Сливочное крем-брюле с карамельной подливкой</a>
+							<div class="product_btn">
+								<a class="btn" href="#">Быстрый просмотр</a>
+							</div>
 						</div>
 					</div>
-				</div>
 
-				<div class="product_item">
-					<div class="products_img">
-						<img src="img/prod_5.png" width="267" height="267" alt="Мороженое с брусничным джемом">
-						<span class="price">325&#8381;/кг</span>
-					</div>
-					<div class="products_nav">
-						<a href="#">Сливочное с брусничным джемом</a>
-						<div class="product_btn">
-							<a class="btn" href="#">Быстрый просмотр</a>
+					<div class="product_item">
+						<div class="products_img">
+							<img src="img/prod_5.png" width="267" height="267" alt="Мороженое с брусничным джемом">
+							<span class="price">325&#8381;/кг</span>
+						</div>
+						<div class="products_nav">
+							<a href="#">Сливочное с брусничным джемом</a>
+							<div class="product_btn">
+								<a class="btn" href="#">Быстрый просмотр</a>
+							</div>
 						</div>
 					</div>
-				</div>
 
-				<div class="product_item">
-					<div class="products_img">
-						<img src="img/prod_6.png" width="267" height="267" alt="Мороженое с ягодками черники">
-						<span class="price">410&#8381;/кг</span>
-					</div>
-					<div class="products_nav">
-						<a href="#">Сливочное-черничное с цельными ягодами черники</a>
-						<div class="product_btn">
-							<a class="btn" href="#">Быстрый просмотр</a>
+					<div class="product_item">
+						<div class="products_img">
+							<img src="img/prod_6.png" width="267" height="267" alt="Мороженое с ягодками черники">
+							<span class="price">410&#8381;/кг</span>
+						</div>
+						<div class="products_nav">
+							<a href="#">Сливочное-черничное с цельными ягодами черники</a>
+							<div class="product_btn">
+								<a class="btn" href="#">Быстрый просмотр</a>
+							</div>
 						</div>
 					</div>
-				</div>
 
-				<div class="product_item">
-					<div class="products_img">
-						<img src="img/prod_7.png" width="267" height="267" alt="Мороженое с карамельной присыпкой">
-						<span class="price">375&#8381;/кг</span>
-					</div>
-					<div class="products_nav">
-						<a href="#">Сливочное-лимонное с карамельной присыпкой</a>
-						<div class="product_btn">
-							<a class="btn" href="#">Быстрый просмотр</a>
+					<div class="product_item">
+						<div class="products_img">
+							<img src="img/prod_7.png" width="267" height="267" alt="Мороженое с карамельной присыпкой">
+							<span class="price">375&#8381;/кг</span>
+						</div>
+						<div class="products_nav">
+							<a href="#">Сливочное-лимонное с карамельной присыпкой</a>
+							<div class="product_btn">
+								<a class="btn" href="#">Быстрый просмотр</a>
+							</div>
 						</div>
 					</div>
-				</div>
 
-				<div class="product_item">
-					<div class="products_img">
-						<img src="img/prod_8.png" width="267" height="267" alt="Мороженое с шоколадной стружкой">
-						<span class="price">415&#8381;/кг</span>
-					</div>
-					<div class="products_nav">
-						<a href="#">Сливочное с шоколадной стружкой</a>
-						<div class="product_btn">
-							<a class="btn" href="#">Быстрый просмотр</a>
+					<div class="product_item">
+						<div class="products_img">
+							<img src="img/prod_8.png" width="267" height="267" alt="Мороженое с шоколадной стружкой">
+							<span class="price">415&#8381;/кг</span>
+						</div>
+						<div class="products_nav">
+							<a href="#">Сливочное с шоколадной стружкой</a>
+							<div class="product_btn">
+								<a class="btn" href="#">Быстрый просмотр</a>
+							</div>
 						</div>
 					</div>
-				</div>
 
-				<div class="product_item">
-					<div class="products_img">
-						<img src="img/prod_9.png" width="267" height="267" alt="Мороженое с кусочками шоколада">
-						<span class="price">440&#8381;/кг</span>
-					</div>
-					<div class="products_nav">
-						<a href="#">Сливочно-ванильное с кусочками шоколада</a>
-						<div class="product_btn">
-							<a class="btn" href="#">Быстрый просмотр</a>
+					<div class="product_item">
+						<div class="products_img">
+							<img src="img/prod_9.png" width="267" height="267" alt="Мороженое с кусочками шоколада">
+							<span class="price">440&#8381;/кг</span>
+						</div>
+						<div class="products_nav">
+							<a href="#">Сливочно-ванильное с кусочками шоколада</a>
+							<div class="product_btn">
+								<a class="btn" href="#">Быстрый просмотр</a>
+							</div>
 						</div>
 					</div>
-				</div>
 
-				<div class="product_item">
-					<div class="products_img">
-						<img src="img/prod_10.png" width="267" height="267" alt="Мороженое с ментоловым сиропом">
-						<span class="price">435&#8381;/кг</span>
-					</div>
-					<div class="products_nav">
-						<a href="#">Сливочное с ментоловым сиропом</a>
-						<div class="product_btn">
-							<a class="btn" href="#">Быстрый просмотр</a>
+					<div class="product_item">
+						<div class="products_img">
+							<img src="img/prod_10.png" width="267" height="267" alt="Мороженое с ментоловым сиропом">
+							<span class="price">435&#8381;/кг</span>
+						</div>
+						<div class="products_nav">
+							<a href="#">Сливочное с ментоловым сиропом</a>
+							<div class="product_btn">
+								<a class="btn" href="#">Быстрый просмотр</a>
+							</div>
 						</div>
 					</div>
-				</div>
 
-				<div class="product_item">
-					<div class="products_img">
-						<img src="img/prod_11.png" width="267" height="267" alt="Мороженое с кусочками черного шоколада">
-						<span class="price">355&#8381;/кг</span>
-					</div>
-					<div class="products_nav">
-						<a href="#">Сливочное с кусочками черного шоколада</a>
-						<div class="product_btn">
-							<a class="btn" href="#">Быстрый просмотр</a>
+					<div class="product_item">
+						<div class="products_img">
+							<img src="img/prod_11.png" width="267" height="267" alt="Мороженое с кусочками черного шоколада">
+							<span class="price">355&#8381;/кг</span>
+						</div>
+						<div class="products_nav">
+							<a href="#">Сливочное с кусочками черного шоколада</a>
+							<div class="product_btn">
+								<a class="btn" href="#">Быстрый просмотр</a>
+							</div>
 						</div>
 					</div>
-				</div>
 
-				<div class="product_item">
-					<div class="products_img">
-						<img src="img/prod_12.png" width="267" height="267" alt="Мороженое с мятным сиропом">
-						<span class="price">420&#8381;/кг</span>
-					</div>
-					<div class="products_nav">
-						<a href="#">Сливочное с мятным сиропом</a>
-						<div class="product_btn">
-							<a class="btn" href="#">Быстрый просмотр</a>
+					<div class="product_item">
+						<div class="products_img">
+							<img src="img/prod_12.png" width="267" height="267" alt="Мороженое с мятным сиропом">
+							<span class="price">420&#8381;/кг</span>
+						</div>
+						<div class="products_nav">
+							<a href="#">Сливочное с мятным сиропом</a>
+							<div class="product_btn">
+								<a class="btn" href="#">Быстрый просмотр</a>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="pagination_block">
-			<div class="container clearfix">
-				<nav class="pagination">
-					<ul class="pagination_list">
-						<li>
-							<a class="back">Назад</a>
-						</li>
-						<li>
-							<a class="active">1</a>
-						</li>
-						<li>
-							<a href="#">2</a>
-						</li>
-						<li>
-							<a href="#">3</a>
-						</li>
-						<li>
-							<a href="#">4</a>
-						</li>
-						<li>
-							<a href="#">5</a>
-						</li>
-						<li>
-							<a class="next" href="#">Вперед</a>
-						</li>
-					</ul>
-				</nav>
+			<div class="pagination_block">
+				<ul>
+					<li>
+						<a class="back">Назад</a>
+					</li>
+					<li>
+						<a class="active">1</a>
+					</li>
+					<li>
+						<a href="#">2</a>
+					</li>
+					<li>
+						<a href="#">3</a>
+					</li>
+					<li>
+						<a href="#">4</a>
+					</li>
+					<li>
+						<a href="#">5</a>
+					</li>
+					<li>
+						<a class="next" href="#">Вперед</a>
+					</li>
+				</ul>
 			</div>
 		</div>
 	</main>
