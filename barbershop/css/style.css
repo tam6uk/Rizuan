@@ -1,5 +1,5 @@
 * {
-    box-sizing: outline-box;
+    box-sizing: border-box;
 }
 
 html,
@@ -17,6 +17,10 @@ body {
 header {
     outline: 1px solid blue;
 }
+main {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
 .container {
     outline: 1px solid blue;
     width: 940px;
@@ -25,12 +29,16 @@ header {
 }
 h1 {
     outline: 1px solid blue;
+    text-transform: uppercase;
 }
 h2 {
     outline: 1px solid blue;
+    text-transform: uppercase;
 }
-.h3 {
+h3 {
     outline: 1px solid blue;
+    text-transform: uppercase;
+    font-size: 24px;
 }
 .logo_head {
     float: left;
@@ -39,7 +47,7 @@ h2 {
 .main_navigation {
     float: left;
     outline: 2px solid blue;
-    width: 680px;
+    width: 660px;
 }
 .menu {
     padding: 0px;
@@ -50,7 +58,7 @@ h2 {
     display: inline-block;
     text-transform: uppercase;
     font-size: 16px;
-    margin-right: 40px;
+    margin-right: 20px;
 }
 .menu li:last-child {
     margin-right: 0px;
@@ -79,6 +87,7 @@ h2 {
 .breadcrumbs_list li {
     display: inline-block;
     font-size: 16px;
+    margin-right: 40px;
 }
 .index_logo {
     outline: 1px solid blue;
@@ -89,14 +98,14 @@ h2 {
 }
 .advantages {
     outline: 1px solid blue;
-    margin-bottom: 80px;
+    width: 920px;
 }
 .advantages_caption {}
 
 .advantages_item {
     outline: 1px solid blue;
     float: left;
-    width: 297px;    
+    width: 293px;    
     margin-right: 20px;
 }
 .advantages_item:last-child {
@@ -129,34 +138,60 @@ h2 {
     margin:0px;
     padding:0px;
 }
+.feedback_form {
+    outline: 1px solid blue;
+    width: 300px;
+}
+.feedback_item input {
+    width: 100%;
+}
+.feedback_item {
+    float: left;
+    outline: 1px solid blue;
+    width: 140px;
+    margin-top: 16px;
+
+}
+.feedback_item:nth-child(2n) {
+    float: right;
+}
+.feedback_form button {
+    margin-top: 20px;
+    display: inline-block;
+
+}
+
 footer {
     outline: 1px solid blue;
+    padding: 0px;
 
 }
 .footer_address {
     outline: 1px solid blue;
     float: left;
-    width: 320px;
-    margin-right: 60px;
+    width: 380px;
+    margin-right: 20px;
     box-sizing: outline-box;
 }
 .social_block {
     outline: 1px solid blue;
     float: left;
-    width: 180px;
-    min-height: 90px;
+    width: 300px;
 }
-.social_list {
+.social_block ul {
+    font-size: 0px;
     padding: 0px;
+    margin: 0px;
 }
 .social_list>li {
     display: inline-block;
+    font-size: 16px;
+    margin-right: 6px;
 }
 .copyright {
     outline: 1px solid blue;
     float: right;
-    width: 180px;
-    min-height: 90px;
+    width: 140px;
 }
 .clearfix::after {
     content: "";
@@ -164,8 +199,7 @@ footer {
     clear: both;
 }
 .content {
-    width: 940px;
-    height: 700px;
+    width: 920px;
     outline: 1px solid blue;
 }
 .content_image {
@@ -180,7 +214,6 @@ footer {
     outline: 1px solid blue;
     float: right;
     width: 400px;
-    min-height: 670px;
 }
 .top_content {
     outline: 1px solid blue;
@@ -188,6 +221,7 @@ footer {
 }
 .content_row_1{
     outline: 1px solid blue;
+    margin-bottom: 40px;
 }
 .in_stock {
     outline: 1px solid blue;
@@ -201,20 +235,27 @@ footer {
     min-height: 30px;
     float: right;
 }
-.top_content>p {
+.top_content p {
     outline: 1px solid blue;
     clear: both;
-    float: left;
+    margin: 0px;
 }
 .content_row_2 {
+    margin-top: 43px;
     outline: 1px solid blue;
     clear: both;
 }
 .item_block {
+    margin-top: 65px;
     outline: 1px solid blue;
 }
 .caption_about_us {
+    width: 940px;
     outline: 1px solid blue;
+    font-size: 25px;
+}
+.caption_about_us span {
+    text-transform: uppercase;
 }
 .about_us {
     outline: 1px solid blue;
@@ -231,7 +272,7 @@ footer {
 }
 .about_us_right>table {
     outline: 1px solid blue;
-    width: 100px;
+    width: 100%;
 }
 .about_us_bottom {
     outline: 1px solid blue;
@@ -256,6 +297,8 @@ footer {
     vertical-align: top;
     text-align: center;
     font-size: 16px;
+    margin-right: 20px;
+    margin-bottom: 20px;
     
 }
 .product_item:nth-child(3n+3) {
