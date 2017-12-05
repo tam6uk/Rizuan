@@ -162,6 +162,7 @@ iframe {
 .contact_block {
     outline: 1px solid slateblue;
     width: 302px;
+    display: none;
 }
 .feed_back {
     display: none;
@@ -274,6 +275,10 @@ iframe {
     float: left;
     width: 1046px;
     height: 870px;    
+}
+.slider_item:last-child,
+.slider_item:first-child {
+    display: none;
 }
 .slider_controls {
     position: absolute;
