@@ -9,7 +9,7 @@
 
 <body>
 
-	<header class="container clearfix">
+	<header class="container layout_header">
 
 		<div class="logo">
 			<a href="index.html">
@@ -43,11 +43,11 @@
 					<a href="#">Доставка и оплата</a>
 				</li>
 				<li>
-					<a href="#">О компании</a>
+					<a href="#">О Компании</a>
 				</li>
 			</ul>
 		</nav>
-		<div class="right_head_block clearfix">
+		<div class="right_head_block">
 			<div class="search">
 				<button class="btn" type="submit">Поиск</button>
 				<form class="search_form">
@@ -129,32 +129,37 @@
 	<!-- Начало контента -->
 
 	<main>
-		<div class="container clearfix">
-			<div class="slider">
-				<ul class="slider_list">
-					<li class="slider_item">
+		<div class="container">
+			<div id="slider">
+				<input type="radio" id="btn_1" name="slider element" checked/>
+				<input type="radio" id="btn_2" name="slider element" />
+				<input type="radio" id="btn_1" name="slider element" />
+
+						<label for="btn_1"></label>
+						<label for="btn_2"></label>
+						<label for="btn_3"></label>
+				</div>
+				<div class="slider_list">
+					<div class="slider_item">
 						<img class="gallery_img" src="img/img_slider1.jpg" width="1046" height="870" alt="Мороженое">
 						<h2>Крем-брюле и пломбир с малиновым джемом</h2>
 						<a class="btn" href="#">Давайте оба!</a>
 
-					</li>
-					<li class="slider_item">
+					</div>
+					<div class="slider_item">
 						<img class="gallery_img" src="img/img_slider2.jpg" width="1046" height="870" alt="Мороженое">
 						<h2>Шоколадный пломбир и лимонный сорбет</h2>
 						<a class="btn" href="#">Давайте оба!</a>
-					</li>
-					<li class="slider_item">
+					</div>
+					<div class="slider_item">
 						<img class="gallery_img" src="img/img_slider3.jpg" width="1046" height="870" alt="Мороженое">
 						<h2>Пломбир с помадкой и клубничный щербет</h2>
 						<a class="btn" href="#">Давайте оба!</a>
-					</li>
-				</ul>
-				<input type="radio" name="slider element" id="slide_1" />
-				<input type="radio" name="slider element" id="slide_2" />
-				<input type="radio" name="slider element" id="slide_3" />
-			</div>
+					</div>
+				</div>
+			
 
-			<div class="stock_block clearfix">
+			<div class="stock_block">
 				<div class="stock_item">
 					<div class="stock_info">
 						<h2>Малинка даром</h2>
@@ -232,7 +237,7 @@
 			<!-- Блок с информацией на сайте -->
 
 			<div class="info_block">
-				<div class="info_list clearfix">
+				<div class="info_list">
 					<p class="info_top_text">Магазин Глейси - это офлайн магазин по продаже мороженого собственного производства на развес
 					</p>
 					<div class="info_item">
@@ -262,7 +267,7 @@
 				</div>
 			</div>
 
-			<div class="blog_delivery clearfix">
+			<div class="blog_delivery">
 				<div class="blog_item">
 					<span class="blog_caption">Новое в нашем блоге</span>
 					<a href="#">
@@ -315,7 +320,7 @@
 		</div>
 	</main>
 	<footer>
-		<div class="container clearfix">
+		<div class="container layout_footer">
 			<div class="social_block">
 				<ul class="social_list">
 					<li>

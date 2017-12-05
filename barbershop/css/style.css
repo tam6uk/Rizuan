@@ -5,7 +5,6 @@
 html,
 body {
     min-width: 1122px;
-    min-height: 1750px;
     margin: 0;
     padding: 0;
   }
@@ -19,13 +18,6 @@ header {
 }
 main {
     padding-top: 40px;
-    padding-bottom: 40px;
-}
-.container {
-    outline: 1px solid blue;
-    width: 940px;
-    margin: 0 auto;
-    padding: 0 10px;
 }
 h1 {
     outline: 1px solid blue;
@@ -40,36 +32,41 @@ h3 {
     text-transform: uppercase;
     font-size: 24px;
 }
+.container {
+    outline: 1px solid blue;
+    width: 960px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.head_flex {
+    display: flex;
+}
 .logo_head {
-    float: left;
     outline: 1px solid blue;
 }
 .main_navigation {
-    float: left;
-    outline: 2px solid blue;
-    width: 660px;
+    outline: 1px solid blue;
+    width: 780px;
 }
 .menu {
     padding: 0px;
-    float: left;
     font-size: 0px;
 }
 .menu li {
     display: inline-block;
     text-transform: uppercase;
     font-size: 16px;
-    margin-right: 20px;
+    margin-right: 10px;
 }
 .menu li:last-child {
     margin-right: 0px;
 }
 .login_block {
-    float: right;
-    outline: 2px solid blue;
+    margin-left: 20px;
+    outline: 1px solid blue;
     width: 140px;
 }
 .login_block a {
-    display: block;
     text-transform: uppercase;
     margin-right: 20px;
     
@@ -92,21 +89,23 @@ h3 {
 .index_logo {
     outline: 1px solid blue;
     width: 368px;
-    height: 204px;
+    min-height: 204px;
     margin-right: auto;
     margin-left: auto;
+    margin-bottom: 25px;
 }
 .advantages {
     outline: 1px solid blue;
-    width: 920px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
 }
 .advantages_caption {}
 
 .advantages_item {
     outline: 1px solid blue;
-    float: left;
-    width: 293px;    
-    margin-right: 20px;
+    width: 300px;
 }
 .advantages_item:last-child {
     margin-right: 0;
@@ -114,12 +113,14 @@ h3 {
 .content_block {
     background-image: url('../img/icon/contetn_backgrnd.jpg');
     background-repeat: repeat-x repeat-y;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 35px;
     padding: 50px 80px;
 }
 .content_item_left {
     outline: 1px solid blue;
-    float: left;
     width: 380px;
 }
 .news_item {
@@ -131,7 +132,6 @@ h3 {
 }
 .content_item_right {
     outline: 1px solid blue;
-    float: right;
     width: 300px;
 }
 .slider {
@@ -141,19 +141,18 @@ h3 {
 .feedback_form {
     outline: 1px solid blue;
     width: 300px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 .feedback_item input {
     width: 100%;
 }
 .feedback_item {
-    float: left;
     outline: 1px solid blue;
     width: 140px;
     margin-top: 16px;
 
-}
-.feedback_item:nth-child(2n) {
-    float: right;
 }
 .feedback_form button {
     margin-top: 20px;
@@ -163,20 +162,20 @@ h3 {
 
 footer {
     outline: 1px solid blue;
-    padding: 0px;
-
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+.main_footer {
+    display: flex;
 }
 .footer_address {
     outline: 1px solid blue;
-    float: left;
-    width: 380px;
-    margin-right: 20px;
-    box-sizing: outline-box;
+    width: 320px;
+    margin-right: 60px;
 }
 .social_block {
     outline: 1px solid blue;
-    float: left;
-    width: 300px;
+    width: 180px;
 }
 .social_block ul {
     font-size: 0px;
@@ -190,29 +189,31 @@ footer {
 }
 .copyright {
     outline: 1px solid blue;
-    float: right;
-    width: 140px;
+    width: 160px;
+    margin-left: auto;
 }
 .clearfix::after {
     content: "";
     display: table;
     clear: both;
 }
-.content {
-    width: 920px;
+.card_product {
+    width: 100%;
     outline: 1px solid blue;
+    display: flex;
+    justify-content: space-between;
 }
 .content_image {
-    float: left;
     width: 460px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 .image_item {
     outline: 1px solid blue;
-    float: left;
 }
 .content_list {
     outline: 1px solid blue;
-    float: right;
     width: 400px;
 }
 .top_content {
@@ -222,28 +223,26 @@ footer {
 .content_row_1{
     outline: 1px solid blue;
     margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
 }
 .in_stock {
     outline: 1px solid blue;
     width: 150px;
     min-height: 30px;
-    float: left;
 }
 .item_code {
     outline: 1px solid blue;
     width: 140px;
     min-height: 30px;
-    float: right;
 }
 .top_content p {
     outline: 1px solid blue;
-    clear: both;
     margin: 0px;
 }
 .content_row_2 {
     margin-top: 43px;
     outline: 1px solid blue;
-    clear: both;
 }
 .item_block {
     margin-top: 65px;
@@ -259,15 +258,17 @@ footer {
 }
 .about_us {
     outline: 1px solid blue;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
 }
 .about_us_left {
     outline: 1px solid blue;
-    float: left;
     width: 380px;
+    
 }
 .about_us_right {
     outline: 1px solid blue;
-    float: right;
     width: 460px;
 }
 .about_us_right>table {
@@ -276,33 +277,34 @@ footer {
 }
 .about_us_bottom {
     outline: 1px solid blue;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+}
+.about_us_bottom h3 {
+    width: 100%;
+}
+.shop_content {
+    display: flex;
+    justify-content: space-between;
 }
 .goods_filter {
-    float: left;
     width: 220px;
 }
 .product_block {
     outline: 1px solid blue;
-    float: right;
     width: 700px;
 }
 .product_list {
-    font-size: 0px;
-    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 .product_item {
     outline: 1px solid blue;
-    display: inline-block;
     width: 220px;
-    vertical-align: top;
-    text-align: center;
-    font-size: 16px;
-    margin-right: 20px;
     margin-bottom: 20px;
-    
-}
-.product_item:nth-child(3n+3) {
-    margin-right: 0px;
 }
 .pagination {
     outline: 1px solid blue;
