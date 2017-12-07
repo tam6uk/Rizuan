@@ -211,6 +211,13 @@ footer {
 }
 .image_item {
     outline: 1px solid blue;
+    width: 140px;
+    height: 149px;
+    overflow: hidden;
+}
+.image_item:first-child {
+    width: 460px;
+    height: 498px;
 }
 .content_list {
     outline: 1px solid blue;

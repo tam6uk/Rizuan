@@ -109,7 +109,6 @@ p {
     width: 557px;
 }
 .products {
-    font-size: 0px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -130,9 +129,13 @@ p {
 }
 .info_list {
     outline: 1px solid rgb(0, 255, 0);
+}
+.info_list_item {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
+    width: 100%;
+    padding: 0 20px;
 }
 .info_top_text {
     outline: 1px solid tomato;
@@ -272,7 +275,6 @@ iframe {
     transition: transform .8s ease;
 }
 .slider_item img {
-    float: left;
     width: 1046px;
     height: 870px;    
 }
