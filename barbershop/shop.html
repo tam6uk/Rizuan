@@ -3,11 +3,13 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>Средства для ухода за вашими волосами</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic">
 	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<title>Средства для ухода за вашими волосами</title>
 </head>
 
-<body>
+<body class="body_background">
 	<header>
 		<div class="container head_flex">
 			<div class="logo_head">
@@ -35,7 +37,7 @@
 				</ul>
 			</nav>
 			<div class="login_block">
-				<a class="log_block" href="#">Вход</a>
+				<a class="login" href="#">Вход</a>
 				<div class="login_form">
 					<form action="#" method="get">
 						<h3>Личный кабинет</h3>
@@ -64,7 +66,7 @@
 						<a href="index.html">Главная</a>
 					</li>
 					<li>
-						<a href="price.html">Прайс-лист</a>
+						<a href="price.html">Магазин</a>
 					</li>
 					<li>
 						<a class="active">Средства для ухода</a>
@@ -106,7 +108,7 @@
 							<legend>Группы товаров:</legend>
 							<div class="filter_item">
 								<input id="1pr" type="radio" name="Бритвенные_принадлжености" value="shaving_accessories">
-								<label for="1pr">Бритвенные принадлежности</label>
+								<label for="1pr"><span>Бритвенные принадлежности</span></label>
 							</div>
 							<div class="filter_item">
 								<input id="2pr" type="radio" name="Средства_для_ухода" value="means_for_care">
@@ -130,8 +132,8 @@
 									<span class="manufacturer_name">&laquo;Baxter of California&raquo;</span>
 								</b>
 							</a>
-							<div>
-								<span>290 &#8381;</span>
+							<div class="content_item_price">
+								<span class="item_price">290 &#8381;</span>
 								<button class="btn" type="submit">купить</button>
 							</div>
 						</div>
@@ -144,8 +146,8 @@
 									<span class="manufacturer_name">&laquo;Baxter of California&raquo;</span>
 								</b>
 							</a>
-							<div>
-								<span>500 &#8381;</span>
+							<div class="content_item_price">
+								<span class="item_price">500 &#8381;</span>
 								<button class="btn" type="submit">купить</button>
 							</div>
 						</div>
@@ -160,8 +162,8 @@
 									</span>
 								</b>
 							</a>
-							<div>
-								<span>300 &#8381;</span>
+							<div class="content_item_price">
+								<span class="item_price">300 &#8381;</span>
 								<button class="btn" type="submit">купить</button>
 							</div>
 						</div>
@@ -174,8 +176,8 @@
 									<span class="manufacturer_name">&laquo;American Crew&raquo;</span>
 								</b>
 							</a>
-							<div>
-								<span>3 900 &#8381;</span>
+							<div class="content_item_price">
+								<span class="item_price">3 900 &#8381;</span>
 								<button class="btn" type="submit">купить</button>
 							</div>
 						</div>
@@ -186,8 +188,8 @@
 									<span class="manufacturer_name">&laquo;American Crew&raquo;</span>
 								</b>
 							</a>
-							<div>
-								<span>2 900 &#8381;</span>
+							<div class="content_item_price">
+								<span class="item_price">2 900 &#8381;</span>
 								<button class="btn" type="submit">купить</button>
 							</div>
 						</div>
@@ -200,8 +202,8 @@
 									</span>
 								</b>
 							</a>
-							<div>
-								<span>750 &#8381;</span>
+							<div class="content_item_price">
+								<span class="item_price">750 &#8381;</span>
 								<button class="btn" type="submit">купить</button>
 							</div>
 						</div>
@@ -209,16 +211,16 @@
 					<div class="pagination">
 						<ul>
 							<li>
-								<a href="#">1</a>
+								<a class="btn" href="#">1</a>
 							</li>
 							<li>
-								<a class="active">2</a>
+								<a class="btn active">2</a>
 							</li>
 							<li>
 								<a href="#">3</a>
 							</li>
 							<li>
-								<a href="#">4</a>
+								<a class="btn" href="#">4</a>
 							</li>
 						</ul>
 					</div>
@@ -233,20 +235,20 @@
 			<div class="footer_address">
 				<span>Барбершоп &laquo;Бородинский&raquo;</span>
 				<address>Адрес: Г. Санкт-Петербург, б. Конюшенная, 19/8</address>
-				<a href="#">Как нас найти?</a>
+				<a href="#">Как нас найти?</a><br>
 				<span>Телефон: +7 (495) 666-02-66</span>
 			</div>
 			<div class="social_block">
 				<span>Давайте дружить!</span>
-				<ul class="social_list">
+				<ul>
 					<li>
-						<a class="btn btn_vk btn_social" href="#">vk</a>
+						<a class="btn_vk" href="#">vk</a>
 					</li>
 					<li>
-						<a class="btn btn_fb btn_social" href="#">facebook</a>
+						<a class="btn_fb" href="#">facebook</a>
 					</li>
 					<li>
-						<a class="btn btn_inst btn_social" href="#">instagram</a>
+						<a class="btn_inst" href="#">instagram</a>
 					</li>
 				</ul>
 			</div>

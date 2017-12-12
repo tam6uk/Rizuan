@@ -4,6 +4,8 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Barbershop - Бородинский</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic">
 	<link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 
@@ -11,7 +13,7 @@
 	<header>
 		<div class="container head_flex">
 			<nav class="main_navigation">
-				<ul class="menu">
+				<ul>
 					<li>
 						<a href="#">Информация</a>
 					</li>
@@ -30,9 +32,9 @@
 				</ul>
 			</nav>
 			<div class="login_block">
-				<a class="log_block" href="#">Вход</a>
+				<a class="login" href="#">Вход</a>
 				<div class="login_form">
-					<form action="#" method="get">
+					<form class action="#" method="get">
 						<h3>Личный кабинет</h3>
 						<span>Введите пожалуйста свой логин и пароль</span>
 						<label for="login_input">Логин</label>
@@ -80,13 +82,15 @@
 					<h2 class="content_caption">Новости</h2>
 					<div class="news_list">
 						<div class="news_item">
-							<a href="#">Нам наконец завезли ягермайстер! Теперь Вы можете пропустить стаканчик во время стрижки</a><br>
+							<a href="#">Нам наконец завезли ягермайстер! Теперь Вы можете пропустить стаканчик во время стрижки</a>
+							<br>
 							<time datetime="2017-01-11">11 января</time>
 						</div>
 						<div class="news_item">
 							<a href="#">В нашей команде пополнение, Борис «Бритва» Cтригунец, обладатель множества титулов и наград пополнил наши стройные
 								ряды
-							</a><br>
+							</a>
+							<br>
 							<time datetime="2017-01-18">18 января</time>
 						</div>
 					</div>
@@ -96,11 +100,11 @@
 				</section>
 				<section class="content_item_right">
 					<h2 class="content_caption">Фотогалерея</h2>
-					<figure class="slider">
-						<img class="slider_item" src="img/slider1.jpg" alt="Наш салон">
-					</figure>
-					<div class="gallery_btn_block">
-						<button class="btn prev" type="button">Назад</button>
+					<div class="gallery">
+						<figure class="gallery_content">
+							<img src="img/slider1.jpg" width="286" height="164"  alt="Наш салон" >
+						</figure>
+						<button class="btn prev" type="button" disabled>Назад</button>
 						<button class="btn next" type="button">Вперед</button>
 					</div>
 				</section>
@@ -128,22 +132,24 @@
 					<h2 class="content_caption">ЗАПИСАТЬСЯ</h2>
 					<p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
 					<form class="feedback_form" action="#" method="get">
-					<div class="feedback_item">
-						<label for="date">Дата</label><br>
-						<input type="text" id="date" name="date" placeholder="08.10.2017">
-					</div>
-					<div class="feedback_item">
-						<label for="time">Время</label><br>
-						<input type="text" id="time" name="time" placeholder="1000:">
-					</div>
-					<div class="feedback_item">
-						<label for="name">Ваше имя</label><br>
-						<input type="text" id="name" name="name" placeholder="Борода">
-					</div>
-					<div class="feedback_item">
-						<label for="phone">Телефон</label><br>
-						<input type="tel" id="phone" name="phone" placeholder="+7 123 456-78-90">
-					</div>
+						<div class="feedback_item">
+							<label for="date">Дата</label>
+							<input type="text" id="date" name="date" placeholder="08.10.2017">
+						</div>
+						<div class="feedback_item">
+							<label for="time">Время</label>
+							<input type="text" id="time" name="time" placeholder="1000:">
+						</div>
+						<div class="feedback_item">
+							<label for="name">Ваше имя</label>
+					
+							<input type="text" id="name" name="name" placeholder="Борода">
+						</div>
+						<div class="feedback_item">
+							<label for="phone">Телефон</label>
+							<input type="tel" id="phone" name="phone" placeholder="+7 123 456-78-90">
+						</div>
+						<div class=""
 						<button class="btn" type="submit">Отправить</button>
 					</form>
 				</section>
@@ -160,15 +166,15 @@
 			</div>
 			<div class="social_block">
 				<span>Давайте дружить!</span>
-				<ul class="social_list">
+				<ul>
 					<li>
-						<a class="btn btn_vk btn_social" href="#">vk</a>
+						<a class="btn_vk" href="#">vk</a>
 					</li>
 					<li>
-						<a class="btn btn_fb btn_social" href="#">facebook</a>
+						<a class="btn_fb" href="#">facebook</a>
 					</li>
 					<li>
-						<a class="btn btn_inst btn_social" href="#">instagram</a>
+						<a class="btn_inst" href="#">instagram</a>
 					</li>
 				</ul>
 			</div>

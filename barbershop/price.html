@@ -3,11 +3,14 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>Цены на услуги - Барбершоп</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic">
 	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<title>Цены на услуги - Барбершоп</title>
+
 </head>
 
-<body>
+<body class="body_background">
 	<header>
 		<div class="container head_flex">
 			<div class="logo_head">
@@ -35,7 +38,7 @@
 				</ul>
 			</nav>
 			<div class="login_block">
-				<a class="log_block" href="#">Вход</a>
+				<a class="login" href="#">Вход</a>
 				<div class="login_form">
 					<form action="#" method="get">
 						<h3>Личный кабинет</h3>
@@ -58,10 +61,10 @@
 	<main>
 		<div class="container">
 			<div class="caption_about_us">
-			<span>Прайс-лист</span>
+				<span>Прайс-лист</span>
 			</div>
 			<div class="breadcrumbs">
-				<ul class="breadcrumbs_list">
+				<ul>
 					<li>
 						<a href="index.html">Главная</a>
 					</li>
@@ -70,49 +73,50 @@
 					</li>
 				</ul>
 			</div>
-			<h1>Истинно мужская классика</h1>
+			<h1 class="price_caption">Истинно мужская классика</h1>
 			<div class="about_us">
-				<div class="about_us_left">
-					<h3>Мы используем только лучшие средства:</h3>
-					<ul>
-						<li>Baxter of california</li>
-						<li>Mr natty</li>
-						<li>Suavecito</li>
-						<li>Malin+goetz</li>
-					</ul>
+				<div class="about_us_top">
+					<div class="about_us_left">
+						<h3>Мы используем только лучшие средства:</h3>
+						<ul class="item_list">
+							<li>Baxter of california</li>
+							<li>Mr natty</li>
+							<li>Suavecito</li>
+							<li>Malin+goetz</li>
+						</ul>
+					</div>
+					<div class="about_us_right">
+						<h3>Цены на услуги наших мастеров:</h3>
+						<table border="1">
+							<tr>
+								<td>Стрижка</td>
+								<td>1500 Р.</td>
+							</tr>
+							<tr>
+								<td>Стрижка бороды</td>
+								<td>500 Р.</td>
+							</tr>
+							<tr>
+								<td>Стрижка усов</td>
+								<td>350 Р.</td>
+							</tr>
+						</table>
+					</div>
 				</div>
-				<div class="about_us_right">
-					<h3>Цены на услуги наших мастеров:</h3>
-					<table>
-						<tr>
-							<td>Стрижка</td>
-							<td>1500 Р.</td>
-						</tr>
-						<tr>
-							<td>Стрижка бороды</td>
-							<td>500 Р.</td>
-						</tr>
-						<tr>
-							<td>Стрижка усов</td>
-							<td>350 Р.</td>
-						</tr>
-					</table>
-				</div>
-			</div>
-			<div class="about_us_bottom">
-				<h3>Несколько слов о нас:</h3>
-				<div class="about_us_left">
-					<p>
-						Наша парикмахерская занимается исключительно мужскими стрижками. стрижка клиента для нас - это уникальная и продуманная до
-						мелочей работа. мы не работаем на количество, мы делаем качество.
-					</p>
-				</div>
-
-				<div class="about_us_right">
-					<p>
-						Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно любое время, даже в обеденный перерыв.
-						Здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя комфортно и свободно!
-					</p>
+				<div class="about_us_bottom">
+					<h3>Несколько слов о нас:</h3>
+					<div class="about_us_left">
+						<p>
+							Наша парикмахерская занимается исключительно мужскими стрижками. стрижка клиента для нас - это уникальная и продуманная до
+							мелочей работа. мы не работаем на количество, мы делаем качество.
+						</p>
+					</div>
+					<div class="about_us_right">
+						<p>
+							Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно любое время, даже в обеденный перерыв.
+							Здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя комфортно и свободно!
+						</p>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -128,15 +132,15 @@
 			</div>
 			<div class="social_block">
 				<span>Давайте дружить!</span>
-				<ul class="social_list">
+				<ul>
 					<li>
-						<a class="btn btn_vk btn_social" href="#">vk</a>
+						<a class="btn_vk" href="#">vk</a>
 					</li>
 					<li>
-						<a class="btn btn_fb btn_social" href="#">facebook</a>
+						<a class="btn_fb" href="#">facebook</a>
 					</li>
 					<li>
-						<a class="btn btn_inst btn_social" href="#">instagram</a>
+						<a class="btn_inst" href="#">instagram</a>
 					</li>
 				</ul>
 			</div>
