@@ -3,8 +3,10 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>Магазин Глейси - мороженое собственного приготовления</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<title>Магазин Глейси - мороженое собственного приготовления</title>	
 </head>
 
 <body>
@@ -18,7 +20,7 @@
 		</div>
 
 		<nav class="main_navigation">
-			<ul class="main_menu">
+			<ul>
 				<li>
 					<a href="catalog.html">Каталог</a>
 					<ul class="submenu">
@@ -29,7 +31,7 @@
 							<a href="catalog.html">Сливочное</a>
 						</li>
 						<li>
-							<a href="#">Щербеты</a>
+							<a class="active" href="#">Щербеты</a>
 						</li>
 						<li>
 							<a href="#">Фруктовый лед</a>
@@ -49,14 +51,14 @@
 		</nav>
 		<div class="right_head_block">
 			<div class="search">
-				<button class="btn" type="submit">Поиск</button>
+				<button class="btn_head" type="submit">Поиск</button>
 				<form class="search_form">
 					<label for="search">Поиск</label>
 					<input type="text" id="search" name="search_input" placeholder="Что ищем?">
 				</form>
 			</div>
 			<div class="login">
-				<button class="btn" type="submit">Вход</button>
+				<button class="btn_head login_btn" type="submit">Вход</button>
 
 				<!-- Форма для входа -->
 				<form class="login_form" method="get">
@@ -79,7 +81,7 @@
 			</div>
 
 			<div class="basket_shop">
-				<button class="btn" type="submit">Пусто</button>
+				<button class="btn_head basket_btn" type="submit">Пусто</button>
 				<!--	<div class="basket_list">
 					<table>
 					<tr>
@@ -116,12 +118,9 @@
 					<button class="btn" type="submit">Оформить заказ</button>
 					</div> -->
 			</div>
-
 			<div class="timetable">
-				<p>
-					с 10 до 20, ежедневно
+					<span class="timetable_item">с 10 до 20, ежедневно</span>
 					<span class="phone">8 812 450-25-25</span>
-				</p>
 			</div>
 		</div>
 	</header>
@@ -160,23 +159,23 @@
 
 
 			<div class="stock_block">
-				<div class="stock_item">
+				<div class="stock_item raspberries">
 					<div class="stock_info">
-						<h2>Малинка даром</h2>
+						<h2>Малинка даром!</h2>
 						<p>
 							При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.
 						</p>
 					</div>
-					<button class="btn" type="submit">Хочу варенье!</button>
+					<a class="btn" href="">Хочу варенье!</a>
 				</div>
-				<div class="stock_item">
+				<div class="stock_item chocolate">
 					<div class="stock_info">
 						<h2>Шоколадки даром!</h2>
 						<p>
 							При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
 						</p>
 					</div>
-					<button class="btn" type="submit">Хочу шоколадок!</button>
+					<a class="btn" href="">Хочу шоколадок!</a>
 				</div>
 			</div>
 
@@ -186,6 +185,7 @@
 					<div class="products_img">
 						<img src="img/prod_1.png" width="267" height="267" alt="Мороженое с апельсиновым джемом">
 						<span class="price">310&#8381;/кг</span>
+						<span class="hit"></span>
 					</div>
 					<div class="products_nav">
 						<a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
@@ -199,6 +199,7 @@
 					<div class="products_img">
 						<img src="img/prod_2.png" width="267" height="267" alt="Мороженое с кусочками шоколада">
 						<span class="price">380&#8381;/кг</span>
+						<span class="hit"></span>
 					</div>
 					<div class="products_nav">
 						<a href="#">Сливочное-кофейное с кусочками шоколада</a>
@@ -212,6 +213,7 @@
 					<div class="products_img">
 						<img src="img/prod_3.png" width="267" height="267" alt="Мороженое с присыпкой из белого шоколада">
 						<span class="price">355&#8381;/кг</span>
+						<span class="hit"></span>
 					</div>
 					<div class="products_nav">
 						<a href="#">Сливочное-клубничное с присыпкой из белого шоколада</a>
@@ -224,6 +226,7 @@
 					<div class="products_img">
 						<img src="img/prod_4.png" width="267" height="267" alt="Крем-брюле с карамельной подливкой">
 						<span class="price">415&#8381;/кг</span>
+						<span class="hit"></span>
 					</div>
 					<div class="products_nav">
 						<a href="#">Сливочное крем-брюле с карамельной подливкой</a>
@@ -241,25 +244,25 @@
 					<p class="info_top_text">Магазин Глейси - это офлайн магазин по продаже мороженого собственного производства на развес
 					</p>
 					<div class="info_list_item">
-						<div class="info_item">
+						<div class="info_item icon_icecrm">
 							<p>
 								Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных
 								временем технологий
 							</p>
 						</div>
-						<div class="info_item">
+						<div class="info_item icon_cow">
 							<p>
 								Закупка ингредиетов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное
 								сотрудничество.
 							</p>
 						</div>
-						<div class="info_item">
+						<div class="info_item icon_leaf">
 							<p>
 								Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты
 								и добавки произведены из натурального, экологически чистого сырья
 							</p>
 						</div>
-						<div class="info_item">
+						<div class="info_item icon_temp">
 							<p>
 								Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути
 								и позволяет сохранить превосходный вкус.
@@ -272,8 +275,8 @@
 			<div class="blog_delivery">
 				<div class="blog_item">
 					<span class="blog_caption">Новое в нашем блоге</span>
-					<a href="#">
-						10 способов сервировки фруктовых щербетов к столу
+					<a class="blog_link" href="#">
+						<span>10 способов сервировки фруктовых щербетов к столу</span>
 					</a>
 				</div>
 
@@ -322,49 +325,42 @@
 		</div>
 	</main>
 	<footer>
-		<div class="container layout_footer">
-			<div class="social_block">
-				<ul class="social_list">
-					<li>
-						<a class="social_btn twitter" href="#">twitter</a>
-					</li>
-					<li>
-						<a class="social_btn instagram" href="#">Instagram</a>
-					</li>
-					<li>
-						<a class="social_btn facebook" href="#">Facebook</a>
-					</li>
-					<li>
-						<a class="social_btn vk" href="#">Vkontakte</a>
-					</li>
-				</ul>
-			</div>
-			<div class="footer_menu">
-				<ul>
-					<li>
-						<a class="provider" href="#">Для поставщиков</a>
-					</li>
-					<li>
+			<div class="container layout_footer">
+				<div class="social_block">
+					<ul class="social_list">
+						<li>
+							<a class="social_btn twitter" href="#">twitter</a>
+						</li>
+						<li>
+							<a class="social_btn instagram" href="#">Instagram</a>
+						</li>
+						<li>
+							<a class="social_btn facebook" href="#">Facebook</a>
+						</li>
+						<li>
+							<a class="social_btn vk" href="#">Vkontakte</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer_menu">
+					<div class="footer_menu_list">
+						<a class="provider" href="#">Для&nbsp;поставщиков</a>
 						<a href="#">О производстве</a>
-					</li>
-					<li>
+					</div>
+					<div class="footer_menu_list">
 						<a href="#">Наши документы</a>
-					</li>
-					<li>
 						<a href="#">Экологические стандарты</a>
-					</li>
-				</ul>
+					</div>
+				</div>
+				<div class="academy_block">
+					<a href="https://htmlacademy.ru/">
+						<img src="img/academy_logo.png" width="108" height="38" alt="html academy">
+					</a>
+					<span class="academy_link">Сделано в
+						<a href="https://htmlacademy.ru/">HTML Academy</a> &copy; 2017</span>
+				</div>
 			</div>
-			<div class="academy_block">
-				<a href="https://htmlacademy.ru/">
-					<img src="img/academy_logo.png" width="108" height="38" alt="html academy">
-				</a>
-				<br>
-				<span class="academy_link">Сделано в
-					<a href="https://htmlacademy.ru/">HTML Academy</a> &copy; 2017</span>
-			</div>
-		</div>
-	</footer>
+		</footer>
 </body>
 
 </html>

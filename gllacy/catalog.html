@@ -15,7 +15,7 @@
 			</a>
 		</div>
 		<nav class="main_navigation">
-			<ul class="main_menu">
+			<ul>
 				<li>
 					<a class="active">Каталог</a>
 					<ul class="submenu">
@@ -46,15 +46,14 @@
 		</nav>
 		<div class="right_head_block">
 			<div class="search">
-				<button class="btn" type="submit">Поиск</button>
+				<button class="btn_head" type="submit">Поиск</button>
 				<form class="search_form">
 					<label for="search">Поиск</label>
 					<input type="text" id="search" name="search_input" value="Что ищем?">
 				</form>
 			</div>
-
 			<div class="login">
-				<button class="btn" type="submit">Вход</button>
+				<button class="btn_head login_btn" type="submit">Вход</button>
 
 				<!-- Форма для входа -->
 
@@ -76,11 +75,8 @@
 					</div>
 				</form>
 			</div>
-
-			<!-- Таблица заказов -->
-
 			<div class="basket_shop">
-				<button class="btn" type="submit">2 товара</button>
+				<button class="btn_head basket_btn" type="submit">2 товара</button>
 				<div class="basket_list">
 					<table>
 						<tr>
@@ -119,10 +115,8 @@
 				</div>
 			</div>
 			<div class="timetable">
-				<p>
-					с 10 до 20, ежедневно
-					<span class="phone">8 812 450-25-25</span>
-				</p>
+				<span class="timetable_item">с 10 до 20, ежедневно</span>
+				<span class="phone">8 812 450-25-25</span>
 			</div>
 		</div>
 	</header>
@@ -133,13 +127,13 @@
 				<nav class="breadcrumbs">
 					<ul>
 						<li>
-							<a href="index.html">Главная</a>
+							<a class="breadcrumbs_item" href="index.html">Главная</a>
 						</li>
 						<li>
-							<a href="catalog.html">Каталог</a>
+							<a class="breadcrumbs_item" href="catalog.html">Каталог</a>
 						</li>
 						<li>
-							<a class="active">Сливочное</a>
+							<a class="breadcrumbs_item breadcrumbs_atcive" class="active_bread">Сливочное</a>
 						</li>
 					</ul>
 				</nav>
@@ -193,13 +187,13 @@
 							<label for="jem">джемы</label>
 						</fieldset>
 						<button class="btn filter_btn" type="submit">Применить</button>
-						
+
 					</div>
 				</form>
 			</div>
 
 			<div class="container">
-				<div class="products">
+				<div class="products_list">
 					<div class="product_item">
 						<div class="products_img">
 							<img src="img/prod_1.png" width="267" height="267" alt="Мороженое с апельсиновым джемом">
@@ -357,13 +351,13 @@
 					</div>
 				</div>
 			</div>
-			<div class="pagination_block">
-				<ul>
+			<div class="pagination">
+				<ul class="pagination_list">
 					<li>
 						<a class="back">Назад</a>
 					</li>
 					<li>
-						<a class="active">1</a>
+						<a class="active_pagination">1</a>
 					</li>
 					<li>
 						<a href="#">2</a>
@@ -404,20 +398,14 @@
 				</ul>
 			</div>
 			<div class="footer_menu">
-				<ul>
-					<li>
-						<a class="provider" href="#">Для поставщиков</a>
-					</li>
-					<li>
-						<a href="#">О производстве</a>
-					</li>
-					<li>
-						<a href="#">Наши документы</a>
-					</li>
-					<li>
-						<a href="#">Экологические стандарты</a>
-					</li>
-				</ul>
+				<div class="footer_menu_list">
+					<a class="provider" href="#">Для&nbsp;поставщиков</a>
+					<a href="#">О производстве</a>
+				</div>
+				<div class="footer_menu_list">
+					<a href="#">Наши документы</a>
+					<a href="#">Экологические стандарты</a>
+				</div>
 			</div>
 			<div class="academy_block">
 				<a href="https://htmlacademy.ru/">
