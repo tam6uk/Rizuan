@@ -9,7 +9,7 @@
 	<title>Средства для ухода за вашими волосами</title>
 </head>
 
-<body class="body_background">
+<body class="inner_page">
 	<header>
 		<div class="container head_flex">
 			<div class="logo_head">
@@ -38,22 +38,6 @@
 			</nav>
 			<div class="login_block">
 				<a class="login" href="#">Вход</a>
-				<div class="login_form">
-					<form action="#" method="get">
-						<h3>Личный кабинет</h3>
-						<span>Введите пожалуйста свой логин и пароль</span>
-						<label for="login_input">Логин</label>
-						<input type="text" id="login_input" placeholder="Логин" name="login">
-						<label for="pass_input">Пароль</label>
-						<input type="text" id="pass_input" placeholder="Пароль" name="pass_input">
-						<div class="login_link">
-							<input type="checkbox" name="remember" id="remember" checked>
-							<label for="remember">Запомнить</label>
-							<a href="#">Я забыл пароль!</a>
-						</div>
-						<button type="submit" class="btn btn-submit">войти</button>
-					</form>
-				</div>
 			</div>
 		</div>
 	</header>
@@ -227,37 +211,56 @@
 				</div>
 			</div>
 		</div>
-
 	</main>
-
 	<footer>
-		<div class="container main_footer">
-			<div class="footer_address">
-				<span>Барбершоп &laquo;Бородинский&raquo;</span>
-				<address>Адрес: Г. Санкт-Петербург, б. Конюшенная, 19/8</address>
-				<a href="#">Как нас найти?</a>
-				<span class="phone_footer">Телефон: +7 (495) 666-02-66</span>
+			<div class="container main_footer">
+				<div class="footer_address">
+					<span>Барбершоп &laquo;Бородинский&raquo;</span>
+					<address>Адрес: Г. Санкт-Петербург, б. Конюшенная, 19/8</address>
+					<a href="#">Как нас найти?</a>
+					<span class="phone_footer">Телефон: +7 (495) 666-02-66</span>
+				</div>
+				<div class="social_block">
+					<span>Давайте дружить!</span>
+					<ul>
+						<li>
+							<a class="social_btn btn_vk" href="#">vk</a>
+						</li>
+						<li>
+							<a class="social_btn btn_fb" href="#">facebook</a>
+						</li>
+						<li>
+							<a class="social_btn btn_inst" href="#">instagram</a>
+						</li>
+					</ul>
+				</div>
+				<div class="copyright">
+					<span>Разработано:</span>
+					<a class="btn" href="https://htmlacademy.ru/">html academy</a>
+				</div>
 			</div>
-			<div class="social_block">
-				<span>Давайте дружить!</span>
-				<ul>
-					<li>
-						<a class="btn_vk" href="#">vk</a>
-					</li>
-					<li>
-						<a class="btn_fb" href="#">facebook</a>
-					</li>
-					<li>
-						<a class="btn_inst" href="#">instagram</a>
-					</li>
-				</ul>
-			</div>
-			<div class="copyright">
-				<span>Разработано:</span>
-				<a class="btn" href="https://htmlacademy.ru/">htmlacademy.ru</a>
-			</div>
+		</footer>
+		<div class="modal_login_form">
+			<h3>Личный кабинет</h3>
+			<p>Введите пожалуйста свой логин и пароль</p>
+			<form class="login_form" action="#" method="get">
+				<!-- <label for="login_input">Логин</label> -->
+				<input class="icon_user" type="text" id="login_input" placeholder="Логин" name="login">
+				<!-- <label for="pass_input">Пароль</label> -->
+				<input class="icon_passworf" type="password" id="pass_input" placeholder="Пароль" name="pass_input">
+				<div class="login_link">
+					<label for="remember"><span>Запомните меня</span></label>
+					<input type="checkbox" name="remember" id="remember" checked>
+					<a class="restore" href="#">Я забыл пароль!</a>
+				</div>
+				<button type="submit" class="btn">войти</button>
+			</form>
+			<button class="modal_content_close" type="button" title="Закрыть">Закрыть</button>
 		</div>
-	</footer>
+		<div class="modal_content_map">
+			<button class="modal_content_close" type="button" title="Закрыть">Закрыть</button>
+			<div id="yandex_map"></div>
+		</div>
 </body>
 
 </html>

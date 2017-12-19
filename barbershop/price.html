@@ -10,7 +10,7 @@
 
 </head>
 
-<body class="body_background">
+<body class="inner_page">
 	<header>
 		<div class="container head_flex">
 			<div class="logo_head">
@@ -26,8 +26,8 @@
 					<li>
 						<a href="#">Новости</a>
 					</li>
-					<li>
-						<a class="active">Прайс-лист</a>
+					<li class="active">
+						<a>Прайс-лист</a>
 					</li>
 					<li>
 						<a href="shop.html">Магазин</a>
@@ -39,22 +39,6 @@
 			</nav>
 			<div class="login_block">
 				<a class="login" href="#">Вход</a>
-				<div class="login_form">
-					<form action="#" method="get">
-						<h3>Личный кабинет</h3>
-						<span>Введите пожалуйста свой логин и пароль</span>
-						<label for="login_input">Логин</label>
-						<input type="text" id="login_input" placeholder="Логин" name="login">
-						<label for="pass_input">Пароль</label>
-						<input type="text" id="pass_input" placeholder="Пароль" name="pass_input">
-						<div class="login_link">
-							<input type="checkbox" name="remember" id="remember" checked>
-							<label for="remember">Запомнить</label>
-							<a href="#">Я забыл пароль!</a>
-						</div>
-						<button type="submit" class="btn btn-submit">войти</button>
-					</form>
-				</div>
 			</div>
 		</div>
 	</header>
@@ -69,49 +53,49 @@
 						<a href="index.html">Главная</a>
 					</li>
 					<li>
-						<a class="breadcrumbs_active">Прайс-лист</a>
+						<a class="current">Прайс-лист</a>
 					</li>
 				</ul>
 			</div>
 			<h1 class="price_caption">Истинно мужская классика</h1>
-			<div class="about_us">
-				<div class="about_us_top">
-					<div class="about_us_left">
-						<h3>Мы используем только лучшие средства:</h3>
-						<ul class="item_list">
+			<div class="inner_content">
+				<div class="inner_columns">
+					<div class="column_left">
+						<h3>Мы используем только<br> лучшие средства:</h3>
+						<ul class="special_list">
 							<li>Baxter of california</li>
 							<li>Mr natty</li>
 							<li>Suavecito</li>
 							<li>Malin+goetz</li>
 						</ul>
 					</div>
-					<div class="about_us_right">
-						<h3>Цены на услуги наших&nbsp;мастеров:</h3>
-						<table class="price_table" border="2">
+					<div class="column_right">
+						<h3>Цены на услуги<br> наших мастеров:</h3>
+						<table class="price_table">
 							<tr>
-								<td class="name_service">Стрижка</td>
-								<td class="price_service">1500 Р.</td>
+								<td>Стрижка</td>
+								<td>1500 Р.</td>
 							</tr>
 							<tr>
-								<td class="name_service">Стрижка бороды</td>
-								<td class="price_service">500 Р.</td>
+								<td>Стрижка бороды</td>
+								<td>500 Р.</td>
 							</tr>
 							<tr>
-								<td class="name_service">Стрижка усов</td>
-								<td class="price_service">350 Р.</td>
+								<td>Стрижка усов</td>
+								<td>350 Р.</td>
 							</tr>
 						</table>
 					</div>
 				</div>
-				<div class="about_us_bottom">
-					<h3>Несколько слов о нас:</h3>
-					<div class="about_us_left">
+				<div class="inner_columns">
+					<div class="column_left">
+						<h3>Несколько слов о нас:</h3>
 						<p>
 							Наша парикмахерская занимается исключительно мужскими стрижками. стрижка клиента для нас - это уникальная и продуманная до
 							мелочей работа. мы не работаем на количество, мы делаем качество.
 						</p>
 					</div>
-					<div class="about_us_right">
+					<div class="column_right">
 						<p>
 							Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно любое время, даже в обеденный перерыв.
 							Здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя комфортно и свободно!
@@ -119,6 +103,8 @@
 					</div>
 				</div>
 			</div>
+		</div>
+		</div>
 		</div>
 	</main>
 
@@ -134,22 +120,45 @@
 				<span>Давайте дружить!</span>
 				<ul>
 					<li>
-						<a class="btn_vk" href="#">vk</a>
+						<a class="social_btn btn_vk" href="#">vk</a>
 					</li>
 					<li>
-						<a class="btn_fb" href="#">facebook</a>
+						<a class="social_btn btn_fb" href="#">facebook</a>
 					</li>
 					<li>
-						<a class="btn_inst" href="#">instagram</a>
+						<a class="social_btn btn_inst" href="#">instagram</a>
 					</li>
 				</ul>
 			</div>
 			<div class="copyright">
 				<span>Разработано:</span>
-				<a class="btn" href="https://htmlacademy.ru/">htmlacademy.ru</a>
+				<a class="btn" href="https://htmlacademy.ru/">html academy</a>
 			</div>
 		</div>
 	</footer>
+	<div class="modal_login_form">
+		<h3>Личный кабинет</h3>
+		<p>Введите пожалуйста свой логин и пароль</p>
+		<form class="login_form" action="#" method="get">
+			<!-- <label for="login_input">Логин</label> -->
+			<input class="icon_user" type="text" id="login_input" placeholder="Логин" name="login">
+			<!-- <label for="pass_input">Пароль</label> -->
+			<input class="icon_passworf" type="password" id="pass_input" placeholder="Пароль" name="pass_input">
+			<div class="login_link">
+				<label for="remember">
+					<span>Запомните меня</span>
+				</label>
+				<input type="checkbox" name="remember" id="remember" checked>
+				<a class="restore" href="#">Я забыл пароль!</a>
+			</div>
+			<button type="submit" class="btn">войти</button>
+		</form>
+		<button class="modal_content_close" type="button" title="Закрыть">Закрыть</button>
+	</div>
+	<div class="modal_content_map">
+		<button class="modal_content_close" type="button" title="Закрыть">Закрыть</button>
+		<div id="yandex_map"></div>
+	</div>
 </body>
 
 </html>
