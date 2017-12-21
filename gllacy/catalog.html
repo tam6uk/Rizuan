@@ -156,35 +156,58 @@
 						<div class="filter_price">
 							<label for="amount">Цена:
 								<span class="minimum_price">100</span> руб. -
-								<span class="maximum_price">500</span> руб.</label>
+								<span class="maximum_price">500</span> руб.
+							</label>
 							<input type="range" id="amount" readonly>
 							<div id="slider_range"></div>
 						</div>
 
 						<fieldset class="fat_block">
 							<legend>Жирность</legend>
-							<input id="fat_0" type="radio" name="fat_content" value="0%">
-							<label for="fat_0">0%</label>
-							<input id="fat_10" type="radio" name="fat_content" value="до 10%" checked>
-							<label for="fat_10">до 10%</label>
-							<input id="fat_30" type="radio" name="fat_content" value="до 30%">
-							<label for="fat_30">до 30%</label>
-							<input id="fat_more_30" type="radio" name="fat_content" value="выше 30%">
-							<label for="fat_more_30">выше 30%</label>
+							<div class="fat_list">
+								<div class="fat_item">
+									<input id="fat_0" type="radio" name="fat_content" value="0%">
+									<label for="fat_0"><span class="fat_check"></span>0%</label>
+								</div>
+								<div class="fat_item">
+									<input id="fat_10" type="radio" name="fat_content" value="до 10%" checked>
+									<label for="fat_10"><span class="fat_check"></span>до 10%</label>
+								</div>
+								<div class="fat_item">
+									<input id="fat_30" type="radio" name="fat_content" value="до 30%">
+									<label for="fat_30"><span class="fat_check"></span>до 30%</label>
+								</div>
+								<div class="fat_item">	
+									<input id="fat_more_30" type="radio" name="fat_content" value="выше 30%">
+									<label for="fat_more_30"><span class="fat_check"></span>выше 30%</label>
+								</div>
+							</div>
 						</fieldset>
 
 						<fieldset class="filler_block">
 							<legend>Наполнители:</legend>
-							<input type="checkbox" name="chocolato" id="chocolato" checked>
-							<label for="chocolato">шоколадные</label>
-							<input type="checkbox" name="sugar_pow" id="sugar_pow" checked>
-							<label for="sugar_pow">сахарные присыпки</label>
-							<input type="checkbox" name="fruit" id="fruit">
-							<label for="fruit">фрукты</label>
-							<input type="checkbox" name="syrup" id="syrup">
-							<label for="syrup">сиропы</label>
-							<input type="checkbox" name="jem" id="jem">
-							<label for="jem">джемы</label>
+							<div class="filler_list">
+								<div class="filler_item">
+									<input type="checkbox" name="chocolato" id="chocolato" checked>
+									<label for="chocolato"><span class="filler_check"></span>шоколадные</label>
+								</div>
+								<div class="filler_item">
+									<input type="checkbox" name="sugar_pow" id="sugar_pow" checked>
+									<label for="sugar_pow"><span class="filler_check"></span>сахарные присыпки</label>
+								</div>
+								<div class="filler_item">
+									<input type="checkbox" name="fruit" id="fruit">
+									<label for="fruit"><span class="filler_check"></span>фрукты</label>
+								</div>
+								<div class="filler_item">
+									<input type="checkbox" name="syrup" id="syrup">
+									<label for="syrup"><span class="filler_check"></span>сиропы</label>
+								</div>
+								<div class="filler_item">
+									<input type="checkbox" name="jem" id="jem">
+									<label for="jem"><span class="filler_check"></span>джемы</label>
+								</div>
+							</div>
 						</fieldset>
 						<button class="btn filter_btn" type="submit">Применить</button>
 
