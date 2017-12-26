@@ -71,6 +71,21 @@ body > input[type="radio"] {
     border-radius: 1em;
     color: #333333;
 }
+.main_active>a:focus {
+    background-color: #fff;
+    color: #000;
+    border-radius: 15px;
+}
+.main_active>a:active {
+    background-color: rgba(248, 247, 244, 0.988);
+    box-shadow: inset 0px 2px 1px 0px rgba(105, 105, 105, 0.004);
+    border-radius: 15px;
+}
+.main_active>a {
+    background-color: #d07058;
+    color: #fff;
+    border-radius: 15px;
+}
 
 .right_head_block {
     display: flex;
@@ -92,6 +107,9 @@ body > input[type="radio"] {
     font-size: 14px;
     line-height: 16px;
     background-color: #b0c0b7;
+}
+.submenu:hover {
+    display: block;
 }
 .submenu {
         font-size: 0px;
@@ -151,7 +169,7 @@ body > input[type="radio"] {
     width: 128px;
     background-color: #d1d0ce;
 }
-
+.submenu,
 .login_form,
 .search_form,
 .basket_list {
@@ -279,23 +297,19 @@ body > input[type="radio"] {
     background: url('../img/icon/icon_login.png') no-repeat center;
 
 }
-.login_btn:hover ~ .login_form {
+/* .login_btn:hover ~ .login_form {
     display: block;
-}
-.login_btn:hover {
+} */
+/* .login_btn:hover {
     color: #000;
     background: url('../img/icon/hover_ic_login.png') no-repeat center;
-}
-.btn_head:hover ~ .search_form {
+} */
+/* .btn_head:hover ~ .search_form {
     display: block;
     
-}
+} */
 .btn_search:hover {
     background: #f8f7f4 url('../img/icon/hover_ic_serach.png') no-repeat center;
-}
-
-.basket_shop {
-    
 }
 
 .basket_shop .btn_head {
@@ -313,6 +327,22 @@ body > input[type="radio"] {
     top: 7px;
     left: 15px;
     background: url('../img/icon/hover_ic_basket.png') no-repeat center;
+}
+.basket_shop .empty_btn {
+    color: #fff;
+    position: relative;
+    width: 117px;
+    padding: 0px 35px 0 33px;
+    text-align: right;
+}
+.empty_btn::before {
+    position: absolute;
+    content: "";
+    width: 21px;
+    height: 20px;
+    top: 7px;
+    left: 15px;
+    background: url('../img/icon/icon_basket.png') no-repeat center;
 }
 
 
@@ -380,17 +410,24 @@ body > input[type="radio"] {
 }
 
 .timetable {
-    margin-top: 23px;
+    margin-top: 3px;
     margin-left: auto;
+
+}
+.timetable p {
+    text-align: right;
+    color: #fff;
     font-size: 14px;
     line-height: 16px;
     font-weight: bold;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
 }
-.timetable_item {
-    display: inline-block;
+.timetable_phone {
+    display: block;
+    font-size: 22px;
+    font-family: "Roboto";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.091;
 }
 
 
@@ -849,7 +886,7 @@ iframe {
     line-height: 1.429;
     text-align: left;
 }
-.contact_list .phone {
+ .phone {
     display: inline-block;
     padding-right: 107px;
     font-size: 18px;
@@ -879,7 +916,7 @@ iframe {
     box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);    
 }
 .main_top {
-    margin-top: -20px;
+    margin-top: -28px;
 }
 .breadcrumbs {
     font-size: 0px;
@@ -1365,6 +1402,7 @@ input[type=checkbox]:checked +  label .filler_check::before,
 
 /*modal content*/
 .feed_back {
+    display: none;
     border-radius: 10px;
     background-color: rgb(248, 247, 244);
     padding: 20px 0 20px 24px;
@@ -1420,8 +1458,8 @@ input[type=checkbox]:checked +  label .filler_check::before,
 }
 .feed_back span:before {
     position: absolute;
-    top: 10px;
-    left: 100px;
+    top: 0;
+    left: 430px;
     content: '';
     width: 3px;
     height: 22px;
@@ -1430,8 +1468,8 @@ input[type=checkbox]:checked +  label .filler_check::before,
 }
 .feed_back span:after {
     position: absolute;
-    top: 10px;
-    left: 100px;
+    top: 0;
+    left: 430px;
     content: '';
     width: 3px;
     height: 22px;

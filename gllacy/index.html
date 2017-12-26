@@ -84,7 +84,7 @@
 				</div>
 
 				<div class="basket_shop">
-					<button class="btn_head basket_btn" type="submit">Пусто</button>
+					<button class="btn_head empty_btn" type="submit">Пусто</button>
 					<!--	<div class="basket_list">
 					<table>
 					<tr>
@@ -122,8 +122,8 @@
 					</div> -->
 				</div>
 				<div class="timetable">
-					<span class="timetable_item">с 10 до 20, ежедневно</span>
-					<span class="phone">8 812 450-25-25</span>
+					<p>с 10 до 20, ежедневно<br>
+					<span class="timetable_phone">8 812 450-25-25</span></p>
 				</div>
 			</div>
 		</header>
@@ -312,10 +312,9 @@
 							(с 10 до 20 ежедневно)
 						</p>
 					</div>
-					<button class="btn">Форма обратной связи</button>
+					<button class="btn contact_list">Форма обратной связи</button>
 					<form class="feed_back" method="get" action="#">
-						<h3>Мы обязательно вам ответим!</h3>
-						<span></span>
+						<h3>Мы обязательно вам ответим!<span></span></h3>
 						<input type="text" name="first_name" placeholder="Как вас зовут?">
 						<input type="text" name="reply_mail" placeholder="Ваша почта для ответа?">
 						<textarea wrap="soft" rows="5">Напишите что-нибудь...
@@ -364,6 +363,34 @@
 			</div>
 		</footer>
 	</div>
+	<script>
+			var link = document.querySelector(".contact_list");
+	  
+			var popup = document.querySelector(".modal-content");
+			var close = popup.querySelector(".modal-content-close");
+	  
+			var form = popup.querySelector("form");
+			var login = popup.querySelector("[name=login]");
+			var password = popup.querySelector("[name=password]");
+	  
+			link.addEventListener("click", function(event) {
+			  event.preventDefault();
+			  popup.classList.add("modal-content-show");
+			  login.focus();
+			});
+	  
+			close.addEventListener("click", function(event) {
+			  event.preventDefault();
+			  popup.classList.remove("modal-content-show");
+			});
+	  
+			form.addEventListener("submit", function(event) {
+			  if (!login.value || !password.value) {
+				event.preventDefault();
+				console.log("Нужно ввести логин и пароль"); 
+			  }
+			});
+		  </script>
 </body>
 
 </html>
