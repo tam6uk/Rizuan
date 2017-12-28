@@ -827,6 +827,10 @@ footer {
     margin-bottom: 13px;
     padding: 0px;
 }
+.filter_item label:hover,
+.group_item label:hover {
+    color: #663d15;
+}
 
 input[type=checkbox],
 input[type=radio] {
@@ -918,6 +922,9 @@ input:focus {
     -webkit-box-shadow: 0 0 15px silver;
             box-shadow: 0 0 15px silver;
     background-color: #ffffff;
+}
+.product_item:hover {
+    box-shadow: 0 0 20px 4px silver;
 }
 .content_item_price {
     width: 187px;
