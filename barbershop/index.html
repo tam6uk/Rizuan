@@ -109,7 +109,7 @@
 						</p>
 					</div>
 					<div class="btn_container">
-						<a class="btn" href="#">Как проехать</a>
+						<a class="btn open_map" href="#">Как проехать</a>
 						<a class="btn" href="#">Обратная связь</a>
 					</div>
 				</section>
@@ -171,13 +171,14 @@
 		<h3>Личный кабинет</h3>
 		<p>Введите пожалуйста свой логин и пароль</p>
 		<form class="login_form" action="#" method="get">
-			<!-- <label for="login_input">Логин</label> -->
-			<input class="icon_user" type="text" id="login_input" placeholder="Логин" name="login">
-			<!-- <label for="pass_input">Пароль</label> -->
-			<input class="icon_passworf" type="password" id="pass_input" placeholder="Пароль" name="pass_input">
+			<!-- <label for="login_input">Логин</label> --><span class="user_icon_input"></span>
+			<input class="icon_user" type="text" id="login_input" placeholder="Логин" name="login" required>
+			<!-- <label for="pass_input">Пароль</label> --><span class="look_icon_input"></span>
+			<input class="icon_passworf" type="password" id="pass_input" placeholder="Пароль" name="pass_input" required>
 			<div class="login_link">
-				<label for="remember"><span>Запомните меня</span></label>
-				<input type="checkbox" name="remember" id="remember" checked>
+					<input type="checkbox" name="remember" id="remember" checked>
+					<label for="remember"><span>Запомните меня</span></label>
+	
 				<a class="restore" href="#">Я забыл пароль!</a>
 			</div>
 			<button type="submit" class="btn">войти</button>
@@ -188,6 +189,47 @@
 		<button class="modal_content_close" type="button" title="Закрыть">Закрыть</button>
 		<div id="yandex_map"></div>
 	</div>
+	<script>
+		var link = document.querySelector(".login");
+  
+		var popup = document.querySelector(".modal_login_form");
+		var close = popup.querySelector(".modal_content_close");
+		var login = popup.querySelector("[name=login]");
+  
+		link.addEventListener("click", function(event) {
+		  event.preventDefault();
+		  popup.classList.add("modal_show");
+		  login.focus();
+		});
+  
+		close.addEventListener("click", function(event) {
+		  event.preventDefault();
+		  popup.classList.remove("modal_show");
+		});
+		
+		var mapOpen = document.querySelector(".open_map");
+		var mapPopup = document.querySelector(".modal_content_map");
+		var mapClose = mapPopup.querySelector(".modal_content_close");
+
+		mapOpen.addEventListener("click", function(event) {
+        event.preventDefault();
+        mapPopup.classList.add("modal_show");
+      });
+
+      mapClose.addEventListener("click", function(event) {
+        event.preventDefault();
+        mapPopup.classList.remove("modal_show");
+      });
+
+      window.addEventListener("keydown", function(event) {
+        if (event.keyCode === 27) {
+          if (mapPopup.classList.contains("modal_show")) {
+            mapPopup.classList.remove("modal_show");
+          }
+        }
+      });
+
+	</script>
 </body>
 
 </html>

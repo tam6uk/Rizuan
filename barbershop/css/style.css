@@ -106,7 +106,7 @@ header {
 }
 .login {
     display: inline-block;
-    padding: 25px 20px;
+    padding: 25px 20px 27px 20px;
     padding-left: 50px;
     position: relative;
     font-size: 16px;
@@ -321,7 +321,7 @@ time {
     font-family: "PT Sans Narrow", "Arial", sans-serif;
     color: #ffffff;
     vertical-align: center;
-    
+    outline: none;
     text-transform: uppercase;
     text-decoration: none;
     background-color: #000000;
@@ -431,14 +431,14 @@ time {
     margin-top: 20px;
     width: 100%;
 }
-
-
 .feedback_form button {
     margin-top: 20px;
     display: inline-block;
-
 }
-
+.feedback_item input:focus {
+    border: 2px solid #663d15;
+    outline: none;
+}
 footer {
     margin-top: 48px;
     padding-top: 57px;
@@ -814,13 +814,13 @@ footer {
     width: 170px;
     font-size: 24px;
     line-height: 32px;
-    margin-bottom: 28px;
+    margin-bottom: 25px;
 }
 .group_box legend {
     width: 170px;
     font-size: 24px;
     line-height: 34px;
-    margin-bottom: 23px;
+    margin-bottom: 26px;
 }
 .filter_item,
 .group_item {
@@ -875,10 +875,16 @@ input[type=radio]:checked + label::after {
     top: 6px;
     width: 8px;
 }
-
+input:disabled + label{
+    opacity: 0.6;
+}
+input:focus {
+    outline: none;
+    border-color: #663d15;
+}
 
 .goods_filter .btn {
-    margin-top: 32px;
+    margin-top: 37px;
     padding: 13px 27px 12px 34px;
     font-size: 13px;
     line-height: 18px;
@@ -1009,6 +1015,7 @@ input[type=radio]:checked + label::after {
     letter-spacing: 0.1px;
 }
 .login_form {
+    position: relative;
     width: 300px;
     margin-top: 11px;
     margin-bottom: 10px;
@@ -1040,7 +1047,26 @@ input[type=radio]:checked + label::after {
     background-repeat: no-repeat;
     background-position: 100% -504px;
 }
-  
+.user_icon_input::after,
+.look_icon_input::before {
+    position: absolute;
+    content: '';
+    width: 15px;
+    height: 15px;
+    top: 0px;
+    left: 0px;
+}
+.user_icon_input::after {
+    background: transparent url(../img/icon/user.png) no-repeat center;
+    top: 14px;
+    left: 275px;
+}
+.look_icon_input::before {
+    background: transparent url(../img/icon/lock.png) no-repeat center;
+    top: 65px;
+    left: 275px;
+}
+
 .login_form input.icon_password {
     background-image: url("img/sprite.png");
     background-repeat: no-repeat;
@@ -1069,7 +1095,6 @@ input[type=radio]:checked + label::after {
   
 .login_link {
     position: relative;
-    padding-left: 30px;
     cursor: pointer;
 }
 
@@ -1104,7 +1129,7 @@ input[type=radio]:checked + label::after {
     position: absolute;
     top: 0;
     right: -34px;
-  
+    outline: none;
     width: 22px;
     height: 22px;
 
@@ -1136,4 +1161,10 @@ input[type=radio]:checked + label::after {
     -webkit-transform: rotate(-45deg);
         -ms-transform: rotate(-45deg);
             transform: rotate(-45deg);
+}
+.modal_show {
+    display: block;
+}
+.login_link input[type=checkbox] + label::before {
+    margin-right: 13px;
 }

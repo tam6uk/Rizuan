@@ -87,7 +87,7 @@
 								<label for="5mn">Murray's</label>
 							</div>
 							<div class="filter_item">
-								<input id="6mn" type="checkbox" name="American_Crew" value="American_Crew">
+								<input id="6mn" type="checkbox" name="American_Crew" value="American_Crew" disabled>
 								<label for="6mn">American Crew</label>
 							</div>
 
@@ -95,7 +95,7 @@
 						<fieldset class="filter_box group_box">
 							<legend>Группы товаров:</legend>
 							<div class="group_item">
-								<input id="1pr" type="radio" name="Бритвенные_принадлжености" value="shaving_accessories">
+								<input id="1pr" type="radio" name="Бритвенные_принадлжености" value="shaving_accessories"  disabled>
 								<label for="1pr">Бритвенные принадлежности</label>
 							</div>
 							<div class="group_item">
@@ -103,7 +103,7 @@
 								<label for="2pr">Средства для ухода</label>
 							</div>
 							<div class="group_item">
-								<input id="3pr" type="radio" name="Аксессуары" value="accessories">
+								<input id="3pr" type="radio" name="Аксессуары" value="accessories" disabled>
 								<label for="3pr">Аксессуары</label>
 							</div>
 
@@ -265,6 +265,24 @@
 			<button class="modal_content_close" type="button" title="Закрыть">Закрыть</button>
 			<div id="yandex_map"></div>
 		</div>
+		<script>
+			var link = document.querySelector(".login");
+			var popup = document.querySelector(".modal_login_form");
+			var close = popup.querySelector(".modal_content_close");
+			var login = popup.querySelector("[name=login]");
+	  
+			link.addEventListener("click", function(event) {
+			  event.preventDefault();
+			  popup.classList.add("modal_show");
+			  login.focus();
+			});
+	  
+			close.addEventListener("click", function(event) {
+			  event.preventDefault();
+			  popup.classList.remove("modal_show");
+			});
+
+		</script>
 </body>
 
 </html>
